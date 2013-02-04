@@ -27,9 +27,8 @@
 					<ul class="nav">
 						<li class="active"><a href="back.html"><i class="icon-cogs"></i> Panneau de configuration</a></li>
 					</ul>
-					<p class="navbar-text pull-right">
-						<strong><a href id="connexion" class="navbar-link">Connexion</a></strong>
-					</p>
+					<strong><a id="deconnexion" href="index.html" class="navbar-link navbar-text pull-right hidden">Déconnexion</a></strong>
+					<strong><a id="connexion" href class="navbar-link navbar-text pull-right">Connexion</a></strong>
 				</div>
 			</div>
 		</div>
@@ -72,14 +71,16 @@
 		var formConnexion = $(".form-signin");
 		var closeFormConnexion = $(".close");
 		var linkConnexion = $("#connexion");
+		var linkDeconnexion = $("#deconnexion");
 		var body = $("body");
 		var connexionId = $("#connexionId");
 		var connexionMdp = $("#connexionMdp");
 		
-		formConnexion.css('margin-left',-(formConnexion.width()/2)-40+'px');
-		formConnexion.css('margin-top',-(formConnexion.height()/2)-40+'px');
-		closeFormConnexion.click(function(){
-			body.removeClass("popup"),$(this).parent().removeClass("affiche");
+		if(localStorage.getItem("connected")) linkConnexion.addClass("hidden"), linkDeconnexion.removeClass("hidden");
+		linkDeconnexion.click(event,function(){
+			event.preventDefault();
+			localStorage.removeItem("connected");
+			document.location.href="index.html";
 		});
 		
 		linkConnexion.click(event,function(){
@@ -95,6 +96,12 @@
 				document.location.href="back.html";
 			}
 		})
+		
+		formConnexion.css('margin-left',-(formConnexion.width()/2)-40+'px');
+		formConnexion.css('margin-top',-(formConnexion.height()/2)-40+'px');
+		closeFormConnexion.click(function(){
+			body.removeClass("popup"),$(this).parent().removeClass("affiche");
+		});
 	});
 </script>
 </html>

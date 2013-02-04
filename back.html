@@ -100,10 +100,12 @@ $(document).ready(function(){
 	
 	var linkDeconnexion = $("#deconnexion");
 	var luminositeVal = document.getElementById("luminositeVal");
+	
 	$("#luminosite").css("background-color" , "rgba(0,0,0,"+(luminositeVal.value/1000)+")");
 	$("#luminositeVal").change(function(){
 		$("#luminosite").css("background-color" , "rgba(0,0,0,"+(luminositeVal.value/1000)+")");
 	});
+	
 	linkDeconnexion.click(event,function(){
 		event.preventDefault();
 		localStorage.removeItem("connected");
