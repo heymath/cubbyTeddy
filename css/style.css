@@ -20,10 +20,10 @@ input, button, select, textarea {
 	visibility:hidden;
 }
 
+/*******************************/
+/*******************************/
 /********* BACK OFFICE *********/
-/********* BACK OFFICE *********/
-/********* BACK OFFICE *********/
-/********* BACK OFFICE *********/
+/*******************************/
 .span4 > div, .span4 > p{
 	min-height:100px;
 	width:100%;
@@ -56,10 +56,10 @@ hr{
 	background-position: 0 0;
 }
 
-/********* CONNEXION *********/
-/********* CONNEXION *********/
-/********* CONNEXION *********/
-/********* CONNEXION *********/
+/*******************************/
+/*******************************/
+/********** CONNEXION **********/
+/*******************************/
 body.popup{
 	background:rgba(118,112,78,1);
 }
@@ -73,6 +73,7 @@ body.popup{
 	z-index:10;
 	width:500px;
 	visibility:hidden;
+	text-align:center;
 }
 .form-signin.affiche{
 	visibility:visible;
@@ -84,23 +85,40 @@ body.popup{
 	text-align:center;
 }
 .form-signin input[type='text'], .form-signin input[type='password']{
-	border:1px solid #4f200c;
+	border:none;
 	background-color:#4f200c;
 	color:#f0e39f;
 	font-weight:bold;
 }
 
-.close{
-	position:relative;top:-50px;right:-50px;
-	background:rgba(255,255,255,1);
-	width:40px;height:40px;text-align:center;border-radius:50%;font-size:2em;line-height:1.5em;
-	opacity:0.6;
+.form-signin button[type='submit']{
+	background:#f0e39f;
+	color:#4f200c;
+	font-weight:bold;
 }
 
+.closeBtn{
+	position:relative;top:-50px;right:-50px;
+	color:#f0e39f;
+	width:40px;height:40px;text-align:center;border-radius:50%;font-size:2em;line-height:1.5em;
+	background:#4f200c;
+	float:right;
+	cursor:pointer;
+	-webkit-box-shadow:0 1px 6px rgba(0,0,0,0.5);
+	-moz-box-shadow:0 1px 6px rgba(0,0,0,0.5);
+	box-shadow:0 1px 6px rgba(0,0,0,0.5);
+	
+}
+.closeBtn:hover{
+	-webkit-box-shadow: inset 0 1px 6px rgba(0,0,0,0.8),0 1px 6px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 6px rgba(0,0,0,0.8),0 1px 6px rgba(0,0,0,0.5);
+	box-shadow: inset 0 1px 6px rgba(0,0,0,0.8),0 1px 6px rgba(0,0,0,0.5);
+}
+
+/*******************************/
+/*******************************/
 /********* MEDIA QUERY *********/
-/********* MEDIA QUERY *********/
-/********* MEDIA QUERY *********/
-/********* MEDIA QUERY *********/
+/*******************************/
 @media screen and (max-width: 640px){
 	#slogan{
 		display:none;

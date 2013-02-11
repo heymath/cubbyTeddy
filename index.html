@@ -57,13 +57,13 @@
 		</div>
 	</div>
 	<form class="form-signin">
-		<div class="close">
+		<div class="closeBtn">
 			<i class="icon-remove"> </i>
 		</div>
 		<h2 class="form-signin-heading">Connexion</h2>
 		<input id="connexionId" type="text" class="input-block-level" placeholder="Identifiant">
 		<input id="connexionMdp" type="password" class="input-block-level" placeholder="Mot de passe">
-		<button class="btn pull-right" type="submit">Ok</button>
+		<button class="btn" type="submit">connexion</button>
 	</form>
 </body>
 <script>
@@ -96,9 +96,8 @@
 				document.location.href="back.html";
 			}
 		})
-		
-		formConnexion.css('margin-left',-(formConnexion.width()/2)-40+'px');
-		formConnexion.css('margin-top',-(formConnexion.height()/2)-40+'px');
+		formConnexion.css('margin-left',-(formConnexion.width()/2)-parseInt(formConnexion.css('padding'))+'px');
+		formConnexion.css('margin-top',-(formConnexion.height()/2)-parseInt(formConnexion.css('padding'))+'px');
 		closeFormConnexion.click(function(){
 			body.removeClass("popup"),$(this).parent().removeClass("affiche");
 		});
