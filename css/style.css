@@ -20,6 +20,29 @@ input, button, select, textarea {
 	visibility:hidden;
 }
 
+.btn-primary:active, .btn-primary.active {
+	background-color:#4f200c;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+	background-color:#4f200c;
+}
+
+.btn-primary {
+	background-color:#4f200c;
+	background-image: -moz-linear-gradient(top,#605b3f,#4f200c);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#605b3f),to(#4f200c));
+	background-image: -webkit-linear-gradient(top,#605b3f,#4f200c);
+	background-image: -o-linear-gradient(top,#605b3f,#4f200c);
+	background-image: linear-gradient(to bottom,#605b3f,#4f200c);
+	background-repeat: repeat-x;
+	border-color: #04c #04c #002a80;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+
 /*******************************/
 /*******************************/
 /********* BACK OFFICE *********/
