@@ -4,7 +4,7 @@
 }
 h1{
 	 font-family: "Blessed day", Helvetica, Arial, sans-serif;
-	 font-size:8em; font-weight:normal;
+	 font-size:8em; line-height:1.2em; font-weight:normal;
 }
 body{
 	background:#f0e39f;
@@ -42,32 +42,74 @@ input, button, select, textarea {
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
+hr{
+	border-top: 1px solid #4f2f0f;
+	border-bottom: 1px solid #4f200c;
+}
+
 
 /*******************************/
 /*******************************/
 /********* BACK OFFICE *********/
 /*******************************/
-.span4 > div, .span4 > p{
+body.backoffice {
+	padding-top:40px;
+}
+body.backoffice > header{
+	background:#4f200c;
+	color:#f0e39f;
+	text-align:center;
+}
+body.backoffice > header .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	color:#4f200c;
+	cursor:default;
+	background-color:#f0e39f;
+	border:1px solid #f0e39f;
+	border-bottom-color:transparent;
+}
+body.backoffice > header .nav-tabs {
+	border-bottom: 1px solid #f0e39f;
+	margin:0;
+}
+body.backoffice > header .nav-tabs > li > a {
+	color:#f0e39f;
+	
+	padding:12px 20px 12px 20px;
+	line-height: 20px;
+	border: 1px solid #f0e39f;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+body.backoffice > header .nav-tabs > li > a:hover {
+	background-color:#f0e39f;
+	color:#4f200c;
+}
+body.backoffice > header .nav-tabs > .active > a:hover {
+	background-color:#f0e39f;
+	color:#4f200c;
+}
+body.backoffice .span4 > div, .span4 > p{
 	min-height:100px;
 	width:100%;
 	border:none;
 	box-shadow:none
 }
-#luminosite{
+body.backoffice #luminosite{
 	border-radius:9px;
 }
-#luminositeVal{
+body.backoffice #luminositeVal{
 	display:none;
 	visibility:hidden
 }
-#console pre{
+body.backoffice #console{
+	bottom:0;
+	position:absolute;
+}
+body.backoffice #console pre{
 	max-height:150px;
 }
-hr{
-	border-top: 1px solid #4f2f0f;
-	border-bottom: 1px solid #4f200c;
-}
-.btn-color{
+body.backoffice .btn-color{
 	background-image: -moz-linear-gradient(top,rgba(255,255,255,0.1),rgba(230,230,230,0.2));
 	background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,0.1)),to(rgba(230,230,230,0.2)));
 	background-image: -webkit-linear-gradient(top,rgba(255,255,255,0.1),rgba(230,230,230,0.2));
@@ -75,7 +117,7 @@ hr{
 	background-image: linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(230,230,230,0.2));
 	background-repeat: repeat-x;
 }
-.btn-color:hover{
+body.backoffice .btn-color:hover{
 	background-position: 0 0;
 }
 

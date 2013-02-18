@@ -45,11 +45,15 @@
 			<div class="row">
 				<div class="span12">
 					<ul class="nav nav-tabs">
-						<li class="active">
+						<li>
 							<a href="back.html">Configuration des lumières</a>
 						</li>
-						<li><a href="back-sons.html">Configuration des sons</a></li>
-						<li><a href="back-compte.html">Paramètres du compte</a></li>
+						<li class="active">
+							<a href="back-sons.html">Configuration des sons</a>
+						</li>
+						<li>
+							<a href="back-compte.html">Paramètres du compte</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -58,31 +62,9 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="span4">
-				<h2><i class="icon-lightbulb"></i> Gestion de la L.E.D.</h2>
-				<div class="btn-group" data-toggle="buttons-radio">
-					<button type="radio" class="btn btn-primary buttons-radio active">ON</button>
-					<button type="radio" class="btn buttons-radio" checked>OFF</button>
-				</div>
-			</div>
-			<div class="span4">
-				<h2><i class="icon-beaker"></i> Gestion de la R.G.B.</h2>
-				<p>
-					<button class="btn btn-large btn-color" style="background-color:rgba(255,255,255,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(0,0,200,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(0,200,0,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(200,0,0,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(0,200,200,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(200,0,200,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(200,200,0,1)"> </button>
-					<button class="btn btn-large btn-color" style="background-color:rgba(0,0,0,1)"> </button>
-					<br /><br />
-					<button class="btn btn-large"><i class="icon-music"></i> Disco !</button>
-				</p>
-			</div>
-			<div class="span4">
-				<h2><i class="icon-adjust"></i> Luminosité ambiante</h2>
-				<div id="luminosite"></div>
+			<div class="span12">
+				<h2><i class="icon-comments"></i> Parler</h2>
+				<textarea> </textarea>
 			</div>
 		</div>
 		<section id="console" class="container">
@@ -116,19 +98,12 @@ $(document).ready(function(){
 	else $(".container.hidden").removeClass("hidden");
 	
 	var linkDeconnexion = $("#deconnexion");
-	var luminositeVal = document.getElementById("luminositeVal");
-	
-	$("#luminosite").css("background-color" , "rgba(0,0,0,"+(luminositeVal.value/1000)+")");
-	$("#luminositeVal").change(function(){
-		$("#luminosite").css("background-color" , "rgba(0,0,0,"+(luminositeVal.value/1000)+")");
-	});
 	
 	linkDeconnexion.click(event,function(){
 		event.preventDefault();
 		localStorage.removeItem("connected");
 		document.location.href="index.html";
 	});
-	
 });
 </script>
 
