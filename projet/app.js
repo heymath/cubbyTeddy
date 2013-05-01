@@ -25,7 +25,7 @@ app.engine('html', cons.mustache);
 app.set('view engine', 'html');
 app.use(express.favicon());
 app.use(express.logger('dev'));
-app.use(express.bodyParser());
+app.use(express.bodyParser({uploadDir:'./tmp'}));
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
