@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Veulliez saisir une url</h1>
+<input type="url"  id="url" width="200" name=""  value=""/>
+<button id="send"> Envoyer </button>
+<br/>
+<iframe sandbox id="siteWeb" sandbox="allow-scripts allow-forms" width="100%" height="820" src="">
+
+
+</iframe>
+
+</body>
+<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+	/*document.getElementById('send').addEventListener('click',function(){
+		console.dir(document.getElementById('siteWeb'));
+		document.getElementById('siteWeb').src= document.getElementById('url').value;
+	});*/
+
+	$(document).ready(function() {
+		var idUser;
+  		var socket = io.connect();
+  		socket.on('initialize',function(id){
+  			idUser = id;
+  		});
+
+  		//Evenement
+  		$('#send').bind('click',function(){
+  			url = $('#url').val();
+  			socket.emit('getUrlClient',url);
+  			$('#siteWeb').attr('src',url);
+  		});
+  		socket.on('setUrl',function(url){
+			$('#siteWeb').attr('src',url);	
+  		});
+	});
+</script>
+</html>
