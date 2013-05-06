@@ -2,12 +2,12 @@ define(
     [
         'backbone',
         'vendor/BaseView',
-        'text!templates/home/home.html'
+        'text!templates/apps/speak.html'
     ],
     
-    function(Backbone,BaseView,homeTemplate){
+    function(Backbone,BaseView,speakTemplate){
         
-        var HomeView = BaseView.extend({
+        var SpeakView = BaseView.extend({
             
             initialize: function(){
                 
@@ -15,7 +15,7 @@ define(
             
             el: '#view',
 
-            template: _.template(homeTemplate),
+            template: _.template(speakTemplate),
 
             events: {
                 
@@ -28,6 +28,6 @@ define(
             }
         });
         
-        return HomeView;
+        return SpeakView;
     }
 );

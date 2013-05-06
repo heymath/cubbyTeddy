@@ -20,8 +20,8 @@ define(
             render: function(){
                 html = "<section id='header_container'>";
                     html += "<header id='header'>";
-                        html += "<div>cubbyTeddy";
-                            html += "<a href='#' style='display:none' id='back'><i class='icon-reply'></i><span class='spliter'><span></span></span></a>";
+                        html += "<div>DOMI";
+                            html += "<a href='#' id='back'><i class='icon-reply'></i></a>";
                         html += "</div>";
                     html += "</header>";
                 html += "</section>";

@@ -118,21 +118,6 @@ body{
         max-width:320px;
         padding-top:36px;
         
-        i.arrow{
-            background-image:url('../images/arrow.png');
-            background-repeat:no-repeat;
-            background-size:44px 26px;
-            opacity:0.1;
-            
-            &.arrow-left{
-                background-position:0px 0px;
-            }
-            
-            &.arrow-right{
-                background-position:-22px 0px;
-            }
-        }
-        
         h1, h2, h3, h4, h5, h6{
             padding:0;
             margin:0;
@@ -153,8 +138,7 @@ body{
             z-index:10;
             left:0;
             top:0;
-            @include simple_gradient($orange_light, 0%, $orange_medium, 100%);
-            border-bottom:1px solid $orange_dark;
+            @include simple_gradient($orange_light, 0%, $orange_dark, 100%);
             
             #header{
                 width:320px;
@@ -167,6 +151,7 @@ body{
                     font-size:20px;
                     line-height:50px;
                     text-align:center;
+                    position:relative;
                     color:$white;
                     margin:0;
                     padding:0;
@@ -176,24 +161,11 @@ body{
                         height:50px;
                         display:block;
                         float:left;
-                        position:relative;
-                        
-                        .spliter{
-                            padding:0 1px;
-                            height:50px;
-                            background-color:rgba(0,0,0,0.1);
-                            display:inline-block;
-                            top:0;
-                            right:-1px;
-                            position:absolute;
-                            
-                            span{
-                                width:1px;
-                                height:50px;
-                                background-color:$orange_dark;
-                                display:inline-block;
-                            }
-                        }
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        color:$white;
+                        text-decoration:none;
                         
                         i{
                             width:50px;
@@ -204,12 +176,8 @@ body{
                         }
                         
                         &:active{
-                            background-image: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-                            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-                            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+                            //background-image: linear-gradient(to bottom, rgba(0,0,0,0.30) 0%,rgba(0,0,0,0) 100%);
+                            color:$orange_dark;
                         }
                     }
                 }
@@ -261,7 +229,32 @@ body{
                     }
                 }
             }
-        }
 
+            #speak{
+
+                #micro{
+                    @include radius(50%);
+                    width:100px;
+                    height:100px;
+                    margin:0 auto;
+                    position:relative;
+                    background:$orange_medium;
+                    border:5px solid $orange_dark;
+
+                    >div{
+                        line-height:40px;
+                        font-size:40px;
+                        width:40px;
+                        height:40px;
+                        position:absolute;
+                        left:50%;
+                        bottom:50%;
+                        margin-left:-20px;
+                        margin-bottom:-20px;
+                        color:$white;
+                    }
+                }
+            }
+        }
     }
 }
