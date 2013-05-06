@@ -11,11 +11,9 @@ var express = require('express')
   , path = require('path')
   , cons = require('consolidate')
   , _ = require('underscore')
-  , formidable = require('formidable')
   , action = require('./routes/speak')
 ;
 
-console.log(formidable);
 
 var app = express();
 var server = http.createServer(app);
