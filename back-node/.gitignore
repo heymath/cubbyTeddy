@@ -1,6 +1,6 @@
 #Mobile
-mobile/temp
-mobile/dist
+mobile/temp/*
+mobile/dist/*
 mobile/.sass-cache
 mobile/.project
 mobile/.DS_Store
@@ -19,5 +19,5 @@ app/spool/*
 .DS_Store
 
 #node-back
-back-node/node_modules
-back-node/tmp
+back-node/node_modules/*
+back-node/tmp/*
