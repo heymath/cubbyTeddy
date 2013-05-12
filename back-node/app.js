@@ -13,9 +13,14 @@ var express = require('express')
   , _ = require('underscore')
   , formidable = require('formidable')
   , action = require('./routes/speak')
+  , blague = require('./lib/blague')
+  , speak = require('./lib/speak.js')
+  , async = require('async')
+
 ;
 
-console.log(formidable);
+var lol = 'lollol';
+
 
 var app = express();
 var server = http.createServer(app);
@@ -37,10 +42,13 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.post('/transformtext',textToSpeak.transformToText);
-app.get('/speak',speakToText.texttospeak);
 app.post('/yumi',action.speak);
 
 http.createServer(app).listen(app.get('port'), function(){
+
   console.log('Express server listening on port ' + app.get('port'));
+  
+    speak.speak("Alors que je lui raconte ma journée, mon fils de seize ans m'interrompt.");
+    speak.speak("Aujourd'hui, nous prenons la voiture et mon mari conduit.");
+
 });

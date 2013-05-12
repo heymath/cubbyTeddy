@@ -1,4 +1,4 @@
-#Mobile
+xé#Mobile
 mobile/temp
 mobile/dist
 mobile/.sass-cache
@@ -12,8 +12,7 @@ mobile/.DS_Store
 .settings/org.eclipse.core.runtime.prefs
 .settings/org.eclipse.php.core.prefs
 .settings/org.eclipse.wst.common.project.facet.core.xml
-mysql.sock
-app/spool/*
+
 
 #Mac
 .DS_Store
