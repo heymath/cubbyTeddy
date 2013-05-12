@@ -11,7 +11,6 @@ var express = require('express')
   , path = require('path')
   , cons = require('consolidate')
   , _ = require('underscore')
-  , formidable = require('formidable')
   , action = require('./routes/speak')
   , blague = require('./lib/blague')
   , speak = require('./lib/speak.js')
@@ -19,8 +18,11 @@ var express = require('express')
 
 ;
 
+<<<<<<< HEAD
 var lol = 'lollol';
 
+=======
+>>>>>>> e5c68860f1a8beaddc59f2065a444b01bec51284
 
 var app = express();
 var server = http.createServer(app);
@@ -47,8 +49,12 @@ app.post('/yumi',action.speak);
 http.createServer(app).listen(app.get('port'), function(){
 
   console.log('Express server listening on port ' + app.get('port'));
+<<<<<<< HEAD
   
     speak.speak("Alors que je lui raconte ma journée, mon fils de seize ans m'interrompt.");
     speak.speak("Aujourd'hui, nous prenons la voiture et mon mari conduit.");
 
 });
+=======
+});
+>>>>>>> e5c68860f1a8beaddc59f2065a444b01bec51284
