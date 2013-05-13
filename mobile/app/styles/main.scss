@@ -88,13 +88,13 @@ $url_motif_black:'../images/motif_black.png';
        -moz-box-shadow: $x $y $blur $rgba $inset;
             box-shadow: $x $y $blur $rgba $inset;
 }
-@import "font-awesome";
+@import 'font-awesome';
 
 @font-face {
-  font-family: 'DidactGothic';
-  src: url('../fonts/DidactGothic');
-  font-weight: normal;
-  font-style: normal;
+  font-family:'Oswald';
+  src:url('../fonts/Oswald-Light.otf');
+  font-weight:normal;
+  font-style:normal;
 }
 
 /*************************************************************/
@@ -102,7 +102,8 @@ $url_motif_black:'../images/motif_black.png';
 /***********************************************************/
 
 body{
-    background:$white;
+    background-color:$blue_dark;
+    background-image:url($url_motif_black);
     margin:0;
     padding:0;
     font-family:Helvetica,Arial,sans-serif;
@@ -167,11 +168,11 @@ body{
                     position:absolute;
                     left:$padding;
                     top:15px;
-                    color:$blue_medium;
+                    color:$blue_dark;
                     text-decoration:none;
                     
                     &:active{
-                        color:$blue_dark;
+                        color:$blue_medium;
                     }
                 }
             }
@@ -194,10 +195,11 @@ body{
         }
         
         #view{
-            min-height:400px;
             padding:94px $padding $padding $padding;
-            background-color:$blue_dark;
-            background-image:url($url_motif_black);
+            
+            &.no_padding{
+                padding:80px 0 14px 0;
+            }
 
             #home{
                 display:inline-block;
@@ -208,37 +210,44 @@ body{
                     @include simple_gradient($white, 0%, $white_dark, 100%);
                     background-color:$white_dark;
                     display:inline-block;
-                    width:60px;
-                    height:58px;
+                    width:86px;
+                    height:84px;
                     color:$blue_medium;
                     position:relative;
                     text-align:center;
-                    font-size:30px;
-                    line-height:58px;
-                    margin:0 14px 40px 0;
+                    font-size:40px;
+                    line-height:66px;
+                    margin:0 $padding $padding 0;
                     border-bottom:2px solid $orange_medium;
                     
                     span{
                         overflow:hidden;
                         position:absolute;
-                        bottom:-30px;
+                        bottom:5px;
                         left:0;
                         font-size:13px;
                         line-height:18px;
-                        color:$white_dark;
+                        color:$blue_dark;
                         font-weight:bold;
-                        text-transform:uppercase;
                         //text-shadow:0px 2px 3px $black;
-                        width:60px;
-                        font-family:DidactGothic;
+                        width:86px;
+                        font-family:'Oswald';
+
+                        &:first-letter{
+                            text-transform:uppercase;
+                        }
                     }
                     
                     &:active{
                         @include simple_gradient($blue_medium, 0%, $blue_dark, 100%);
                         color:$white_dark;
+
+                        span{
+                            color:$white_dark;
+                        }
                     }
 
-                    &:nth-of-type(4n+4){
+                    &:nth-of-type(3n+3){
                         margin-right:0;
                     }
                 }
@@ -294,6 +303,10 @@ body{
             #config{
                 
             }
+
+            #map{
+                width:100%;
+            }
         }
     }
 }
@@ -307,31 +320,6 @@ body{
                         background-size:50px 50px;
                         background-image:url('../images/domi@2x.png');
                     }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:480px){
-    body{
-        #main_container{
-            #view{
-                #home{
-                    .app{
-                        margin-right:15px;
-
-                        &:nth-of-type(4n+4){
-                            margin-right:15px;
-                        }
-                        &:nth-of-type(6n+6){
-                            margin-right:0;
-                        }
-                    }
-                    /*#micro{
-                        background-image:url('../images/micro@2x.png');
-                        background-size:110px 110px;
-                    }*/
                 }
             }
         }

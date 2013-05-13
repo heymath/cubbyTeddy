@@ -4,10 +4,11 @@ define(
         'views/headerView',
         'views/footerView',
         'views/home/homeView',
-        'views/apps/configView'
+        'views/apps/configView',
+        'views/apps/mapView'
     ],
     
-    function(Backbone,HeaderView,FooterView,HomeView,ConfigView){
+    function(Backbone,HeaderView,FooterView,HomeView,ConfigView,MapView){
          
         var AppRouter = Backbone.Router.extend({
             
@@ -17,7 +18,8 @@ define(
 
             routes:{
                 '': 'home',
-                'config': 'config'
+                'config': 'config',
+                'map': 'map'
             },
 
             home : function(){
@@ -28,9 +30,16 @@ define(
             },
 
             config : function(){
-                console.log("Routage vers la view speak");
+                console.log("Routage vers la view config");
                 configView = new ConfigView({router: this})
                 configView.render();
+                this.app.view.headerView.show_btn_back();
+            },
+
+            map : function(){
+                console.log("Routage vers la view map");
+                mapView = new MapView({router: this})
+                mapView.render();
                 this.app.view.headerView.show_btn_back();
             }
         });
