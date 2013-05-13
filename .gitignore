@@ -4,6 +4,8 @@ mobile/dist
 mobile/.sass-cache
 mobile/.project
 mobile/.DS_Store
+mobile/app/.DS_Store
+mobile/app/scripts/views/.DS_Store
 
 #Eclipse
 .buildpath
@@ -19,3 +21,5 @@ mobile/.DS_Store
 
 #node-back
 back-node/node_modules
+
+mobile/.DS_Store
