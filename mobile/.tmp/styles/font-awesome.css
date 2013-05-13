@@ -30,7 +30,7 @@
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-/* line 43, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\0000343}}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -51,7 +51,7 @@
 }
 
 /* more sprites.less reset */
-/* line 75, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\0000375}}
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -68,7 +68,7 @@
   background-image: none;
 }
 
-/* line 80, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\0000380}}
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
@@ -77,46 +77,46 @@
 }
 
 /* makes sure icons active on rollover in links */
-/* line 89, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\0000389}}
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
 }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 95, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\0000395}}
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.3333333333333333em;
 }
 
-/* line 102, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003102}}
 .btn [class^="icon-"],
 .btn [class*=" icon-"], .nav [class^="icon-"],
 .nav [class*=" icon-"] {
   display: inline;
   /* keeps button heights with and without icons the same */
 }
-/* line 105, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003105}}
 .btn [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large,
 .nav [class*=" icon-"].icon-large {
   line-height: .9em;
 }
-/* line 106, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003106}}
 .btn [class^="icon-"].icon-spin,
 .btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
 .nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
-/* line 112, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003112}}
 .nav-tabs [class^="icon-"],
 .nav-tabs [class*=" icon-"], .nav-pills [class^="icon-"],
 .nav-pills [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
 }
-/* line 114, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003114}}
 .nav-tabs [class^="icon-"], .nav-tabs [class^="icon-"].icon-large,
 .nav-tabs [class*=" icon-"],
 .nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills [class^="icon-"].icon-large,
@@ -125,7 +125,7 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 
-/* line 120, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003120}}
 li [class^="icon-"],
 li [class*=" icon-"], .nav li [class^="icon-"],
 .nav li [class*=" icon-"] {
@@ -133,7 +133,7 @@ li [class*=" icon-"], .nav li [class^="icon-"],
   width: 1.25em;
   text-align: center;
 }
-/* line 124, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003124}}
 li [class^="icon-"].icon-large,
 li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
 .nav li [class*=" icon-"].icon-large {
@@ -141,23 +141,23 @@ li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
   width: 1.5625em;
 }
 
-/* line 131, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003131}}
 ul.icons {
   list-style-type: none;
   text-indent: -.75em;
 }
-/* line 137, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003137}}
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
   width: .75em;
 }
 
-/* line 143, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003143}}
 .icon-muted {
   color: #eeeeee;
 }
 
-/* line 150, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003150}}
 .icon-border {
   border: solid 1px #eeeeee;
   padding: .2em .25em .15em;
@@ -166,11 +166,11 @@ ul.icons li [class*=" icon-"] {
   border-radius: 3px;
 }
 
-/* line 159, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003159}}
 .icon-2x {
   font-size: 2em;
 }
-/* line 161, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003161}}
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -178,11 +178,11 @@ ul.icons li [class*=" icon-"] {
   border-radius: 4px;
 }
 
-/* line 166, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003166}}
 .icon-3x {
   font-size: 3em;
 }
-/* line 168, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003168}}
 .icon-3x.icon-border {
   border-width: 3px;
   -webkit-border-radius: 5px;
@@ -190,11 +190,11 @@ ul.icons li [class*=" icon-"] {
   border-radius: 5px;
 }
 
-/* line 173, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003173}}
 .icon-4x {
   font-size: 4em;
 }
-/* line 175, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003175}}
 .icon-4x.icon-border {
   border-width: 4px;
   -webkit-border-radius: 6px;
@@ -202,69 +202,69 @@ ul.icons li [class*=" icon-"] {
   border-radius: 6px;
 }
 
-/* line 185, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003185}}
 .pull-right {
   float: right;
 }
 
-/* line 186, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003186}}
 .pull-left {
   float: left;
 }
 
-/* line 190, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003190}}
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
   margin-right: .3em;
 }
-/* line 193, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003193}}
 [class^="icon-"].pull-right,
 [class*=" icon-"].pull-right {
   margin-left: .3em;
 }
 
-/* line 202, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003202}}
 .btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
-/* line 204, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003204}}
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
-/* line 212, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003212}}
 .btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em;
 }
 
-/* line 219, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003219}}
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
-/* line 222, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003222}}
 .btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-top: .05em;
 }
-/* line 224, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003224}}
 .btn.btn-large [class^="icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
   margin-right: .2em;
 }
-/* line 225, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003225}}
 .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
 }
 
-/* line 230, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003230}}
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -357,1248 +357,1248 @@ ul.icons li [class*=" icon-"] {
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-/* line 268, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003268}}
 .icon-glass:before {
   content: "\f000";
 }
 
-/* line 269, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003269}}
 .icon-music:before {
   content: "\f001";
 }
 
-/* line 270, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003270}}
 .icon-search:before {
   content: "\f002";
 }
 
-/* line 271, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003271}}
 .icon-envelope:before {
   content: "\f003";
 }
 
-/* line 272, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003272}}
 .icon-heart:before {
   content: "\f004";
 }
 
-/* line 273, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003273}}
 .icon-star:before {
   content: "\f005";
 }
 
-/* line 274, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003274}}
 .icon-star-empty:before {
   content: "\f006";
 }
 
-/* line 275, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003275}}
 .icon-user:before {
   content: "\f007";
 }
 
-/* line 276, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003276}}
 .icon-film:before {
   content: "\f008";
 }
 
-/* line 277, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003277}}
 .icon-th-large:before {
   content: "\f009";
 }
 
-/* line 278, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003278}}
 .icon-th:before {
   content: "\f00a";
 }
 
-/* line 279, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003279}}
 .icon-th-list:before {
   content: "\f00b";
 }
 
-/* line 280, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003280}}
 .icon-ok:before {
   content: "\f00c";
 }
 
-/* line 281, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003281}}
 .icon-remove:before {
   content: "\f00d";
 }
 
-/* line 282, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003282}}
 .icon-zoom-in:before {
   content: "\f00e";
 }
 
-/* line 284, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003284}}
 .icon-zoom-out:before {
   content: "\f010";
 }
 
-/* line 285, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003285}}
 .icon-off:before {
   content: "\f011";
 }
 
-/* line 286, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003286}}
 .icon-signal:before {
   content: "\f012";
 }
 
-/* line 287, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003287}}
 .icon-cog:before {
   content: "\f013";
 }
 
-/* line 288, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003288}}
 .icon-trash:before {
   content: "\f014";
 }
 
-/* line 289, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003289}}
 .icon-home:before {
   content: "\f015";
 }
 
-/* line 290, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003290}}
 .icon-file:before {
   content: "\f016";
 }
 
-/* line 291, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003291}}
 .icon-time:before {
   content: "\f017";
 }
 
-/* line 292, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003292}}
 .icon-road:before {
   content: "\f018";
 }
 
-/* line 293, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003293}}
 .icon-download-alt:before {
   content: "\f019";
 }
 
-/* line 294, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003294}}
 .icon-download:before {
   content: "\f01a";
 }
 
-/* line 295, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003295}}
 .icon-upload:before {
   content: "\f01b";
 }
 
-/* line 296, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003296}}
 .icon-inbox:before {
   content: "\f01c";
 }
 
-/* line 297, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003297}}
 .icon-play-circle:before {
   content: "\f01d";
 }
 
-/* line 298, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003298}}
 .icon-repeat:before {
   content: "\f01e";
 }
 
 /* \f020 doesn't work in Safari. all shifted one down */
-/* line 301, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003301}}
 .icon-refresh:before {
   content: "\f021";
 }
 
-/* line 302, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003302}}
 .icon-list-alt:before {
   content: "\f022";
 }
 
-/* line 303, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003303}}
 .icon-lock:before {
   content: "\f023";
 }
 
-/* line 304, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003304}}
 .icon-flag:before {
   content: "\f024";
 }
 
-/* line 305, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003305}}
 .icon-headphones:before {
   content: "\f025";
 }
 
-/* line 306, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003306}}
 .icon-volume-off:before {
   content: "\f026";
 }
 
-/* line 307, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003307}}
 .icon-volume-down:before {
   content: "\f027";
 }
 
-/* line 308, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003308}}
 .icon-volume-up:before {
   content: "\f028";
 }
 
-/* line 309, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003309}}
 .icon-qrcode:before {
   content: "\f029";
 }
 
-/* line 310, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003310}}
 .icon-barcode:before {
   content: "\f02a";
 }
 
-/* line 311, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003311}}
 .icon-tag:before {
   content: "\f02b";
 }
 
-/* line 312, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003312}}
 .icon-tags:before {
   content: "\f02c";
 }
 
-/* line 313, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003313}}
 .icon-book:before {
   content: "\f02d";
 }
 
-/* line 314, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003314}}
 .icon-bookmark:before {
   content: "\f02e";
 }
 
-/* line 315, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003315}}
 .icon-print:before {
   content: "\f02f";
 }
 
-/* line 317, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003317}}
 .icon-camera:before {
   content: "\f030";
 }
 
-/* line 318, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003318}}
 .icon-font:before {
   content: "\f031";
 }
 
-/* line 319, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003319}}
 .icon-bold:before {
   content: "\f032";
 }
 
-/* line 320, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003320}}
 .icon-italic:before {
   content: "\f033";
 }
 
-/* line 321, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003321}}
 .icon-text-height:before {
   content: "\f034";
 }
 
-/* line 322, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003322}}
 .icon-text-width:before {
   content: "\f035";
 }
 
-/* line 323, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003323}}
 .icon-align-left:before {
   content: "\f036";
 }
 
-/* line 324, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003324}}
 .icon-align-center:before {
   content: "\f037";
 }
 
-/* line 325, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003325}}
 .icon-align-right:before {
   content: "\f038";
 }
 
-/* line 326, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003326}}
 .icon-align-justify:before {
   content: "\f039";
 }
 
-/* line 327, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003327}}
 .icon-list:before {
   content: "\f03a";
 }
 
-/* line 328, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003328}}
 .icon-indent-left:before {
   content: "\f03b";
 }
 
-/* line 329, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003329}}
 .icon-indent-right:before {
   content: "\f03c";
 }
 
-/* line 330, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003330}}
 .icon-facetime-video:before {
   content: "\f03d";
 }
 
-/* line 331, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003331}}
 .icon-picture:before {
   content: "\f03e";
 }
 
-/* line 333, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003333}}
 .icon-pencil:before {
   content: "\f040";
 }
 
-/* line 334, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003334}}
 .icon-map-marker:before {
   content: "\f041";
 }
 
-/* line 335, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003335}}
 .icon-adjust:before {
   content: "\f042";
 }
 
-/* line 336, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003336}}
 .icon-tint:before {
   content: "\f043";
 }
 
-/* line 337, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003337}}
 .icon-edit:before {
   content: "\f044";
 }
 
-/* line 338, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003338}}
 .icon-share:before {
   content: "\f045";
 }
 
-/* line 339, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003339}}
 .icon-check:before {
   content: "\f046";
 }
 
-/* line 340, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003340}}
 .icon-move:before {
   content: "\f047";
 }
 
-/* line 341, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003341}}
 .icon-step-backward:before {
   content: "\f048";
 }
 
-/* line 342, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003342}}
 .icon-fast-backward:before {
   content: "\f049";
 }
 
-/* line 343, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003343}}
 .icon-backward:before {
   content: "\f04a";
 }
 
-/* line 344, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003344}}
 .icon-play:before {
   content: "\f04b";
 }
 
-/* line 345, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003345}}
 .icon-pause:before {
   content: "\f04c";
 }
 
-/* line 346, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003346}}
 .icon-stop:before {
   content: "\f04d";
 }
 
-/* line 347, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003347}}
 .icon-forward:before {
   content: "\f04e";
 }
 
-/* line 349, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003349}}
 .icon-fast-forward:before {
   content: "\f050";
 }
 
-/* line 350, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003350}}
 .icon-step-forward:before {
   content: "\f051";
 }
 
-/* line 351, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003351}}
 .icon-eject:before {
   content: "\f052";
 }
 
-/* line 352, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003352}}
 .icon-chevron-left:before {
   content: "\f053";
 }
 
-/* line 353, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003353}}
 .icon-chevron-right:before {
   content: "\f054";
 }
 
-/* line 354, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003354}}
 .icon-plus-sign:before {
   content: "\f055";
 }
 
-/* line 355, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003355}}
 .icon-minus-sign:before {
   content: "\f056";
 }
 
-/* line 356, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003356}}
 .icon-remove-sign:before {
   content: "\f057";
 }
 
-/* line 357, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003357}}
 .icon-ok-sign:before {
   content: "\f058";
 }
 
-/* line 358, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003358}}
 .icon-question-sign:before {
   content: "\f059";
 }
 
-/* line 359, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003359}}
 .icon-info-sign:before {
   content: "\f05a";
 }
 
-/* line 360, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003360}}
 .icon-screenshot:before {
   content: "\f05b";
 }
 
-/* line 361, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003361}}
 .icon-remove-circle:before {
   content: "\f05c";
 }
 
-/* line 362, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003362}}
 .icon-ok-circle:before {
   content: "\f05d";
 }
 
-/* line 363, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003363}}
 .icon-ban-circle:before {
   content: "\f05e";
 }
 
-/* line 365, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003365}}
 .icon-arrow-left:before {
   content: "\f060";
 }
 
-/* line 366, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003366}}
 .icon-arrow-right:before {
   content: "\f061";
 }
 
-/* line 367, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003367}}
 .icon-arrow-up:before {
   content: "\f062";
 }
 
-/* line 368, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003368}}
 .icon-arrow-down:before {
   content: "\f063";
 }
 
-/* line 369, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003369}}
 .icon-share-alt:before {
   content: "\f064";
 }
 
-/* line 370, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003370}}
 .icon-resize-full:before {
   content: "\f065";
 }
 
-/* line 371, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003371}}
 .icon-resize-small:before {
   content: "\f066";
 }
 
-/* line 372, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003372}}
 .icon-plus:before {
   content: "\f067";
 }
 
-/* line 373, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003373}}
 .icon-minus:before {
   content: "\f068";
 }
 
-/* line 374, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003374}}
 .icon-asterisk:before {
   content: "\f069";
 }
 
-/* line 375, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003375}}
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
 
-/* line 376, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003376}}
 .icon-gift:before {
   content: "\f06b";
 }
 
-/* line 377, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003377}}
 .icon-leaf:before {
   content: "\f06c";
 }
 
-/* line 378, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003378}}
 .icon-fire:before {
   content: "\f06d";
 }
 
-/* line 379, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003379}}
 .icon-eye-open:before {
   content: "\f06e";
 }
 
-/* line 381, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003381}}
 .icon-eye-close:before {
   content: "\f070";
 }
 
-/* line 382, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003382}}
 .icon-warning-sign:before {
   content: "\f071";
 }
 
-/* line 383, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003383}}
 .icon-plane:before {
   content: "\f072";
 }
 
-/* line 384, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003384}}
 .icon-calendar:before {
   content: "\f073";
 }
 
-/* line 385, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003385}}
 .icon-random:before {
   content: "\f074";
 }
 
-/* line 386, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003386}}
 .icon-comment:before {
   content: "\f075";
 }
 
-/* line 387, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003387}}
 .icon-magnet:before {
   content: "\f076";
 }
 
-/* line 388, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003388}}
 .icon-chevron-up:before {
   content: "\f077";
 }
 
-/* line 389, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003389}}
 .icon-chevron-down:before {
   content: "\f078";
 }
 
-/* line 390, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003390}}
 .icon-retweet:before {
   content: "\f079";
 }
 
-/* line 391, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003391}}
 .icon-shopping-cart:before {
   content: "\f07a";
 }
 
-/* line 392, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003392}}
 .icon-folder-close:before {
   content: "\f07b";
 }
 
-/* line 393, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003393}}
 .icon-folder-open:before {
   content: "\f07c";
 }
 
-/* line 394, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003394}}
 .icon-resize-vertical:before {
   content: "\f07d";
 }
 
-/* line 395, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003395}}
 .icon-resize-horizontal:before {
   content: "\f07e";
 }
 
-/* line 397, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003397}}
 .icon-bar-chart:before {
   content: "\f080";
 }
 
-/* line 398, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003398}}
 .icon-twitter-sign:before {
   content: "\f081";
 }
 
-/* line 399, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003399}}
 .icon-facebook-sign:before {
   content: "\f082";
 }
 
-/* line 400, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003400}}
 .icon-camera-retro:before {
   content: "\f083";
 }
 
-/* line 401, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003401}}
 .icon-key:before {
   content: "\f084";
 }
 
-/* line 402, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003402}}
 .icon-cogs:before {
   content: "\f085";
 }
 
-/* line 403, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003403}}
 .icon-comments:before {
   content: "\f086";
 }
 
-/* line 404, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003404}}
 .icon-thumbs-up:before {
   content: "\f087";
 }
 
-/* line 405, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003405}}
 .icon-thumbs-down:before {
   content: "\f088";
 }
 
-/* line 406, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003406}}
 .icon-star-half:before {
   content: "\f089";
 }
 
-/* line 407, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003407}}
 .icon-heart-empty:before {
   content: "\f08a";
 }
 
-/* line 408, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003408}}
 .icon-signout:before {
   content: "\f08b";
 }
 
-/* line 409, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003409}}
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
 
-/* line 410, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003410}}
 .icon-pushpin:before {
   content: "\f08d";
 }
 
-/* line 411, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003411}}
 .icon-external-link:before {
   content: "\f08e";
 }
 
-/* line 413, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003413}}
 .icon-signin:before {
   content: "\f090";
 }
 
-/* line 414, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003414}}
 .icon-trophy:before {
   content: "\f091";
 }
 
-/* line 415, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003415}}
 .icon-github-sign:before {
   content: "\f092";
 }
 
-/* line 416, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003416}}
 .icon-upload-alt:before {
   content: "\f093";
 }
 
-/* line 417, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003417}}
 .icon-lemon:before {
   content: "\f094";
 }
 
-/* line 418, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003418}}
 .icon-phone:before {
   content: "\f095";
 }
 
-/* line 419, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003419}}
 .icon-check-empty:before {
   content: "\f096";
 }
 
-/* line 420, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003420}}
 .icon-bookmark-empty:before {
   content: "\f097";
 }
 
-/* line 421, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003421}}
 .icon-phone-sign:before {
   content: "\f098";
 }
 
-/* line 422, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003422}}
 .icon-twitter:before {
   content: "\f099";
 }
 
-/* line 423, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003423}}
 .icon-facebook:before {
   content: "\f09a";
 }
 
-/* line 424, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003424}}
 .icon-github:before {
   content: "\f09b";
 }
 
-/* line 425, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003425}}
 .icon-unlock:before {
   content: "\f09c";
 }
 
-/* line 426, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003426}}
 .icon-credit-card:before {
   content: "\f09d";
 }
 
-/* line 427, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003427}}
 .icon-rss:before {
   content: "\f09e";
 }
 
-/* line 429, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003429}}
 .icon-hdd:before {
   content: "\f0a0";
 }
 
-/* line 430, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003430}}
 .icon-bullhorn:before {
   content: "\f0a1";
 }
 
-/* line 431, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003431}}
 .icon-bell:before {
   content: "\f0a2";
 }
 
-/* line 432, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003432}}
 .icon-certificate:before {
   content: "\f0a3";
 }
 
-/* line 433, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003433}}
 .icon-hand-right:before {
   content: "\f0a4";
 }
 
-/* line 434, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003434}}
 .icon-hand-left:before {
   content: "\f0a5";
 }
 
-/* line 435, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003435}}
 .icon-hand-up:before {
   content: "\f0a6";
 }
 
-/* line 436, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003436}}
 .icon-hand-down:before {
   content: "\f0a7";
 }
 
-/* line 437, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003437}}
 .icon-circle-arrow-left:before {
   content: "\f0a8";
 }
 
-/* line 438, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003438}}
 .icon-circle-arrow-right:before {
   content: "\f0a9";
 }
 
-/* line 439, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003439}}
 .icon-circle-arrow-up:before {
   content: "\f0aa";
 }
 
-/* line 440, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003440}}
 .icon-circle-arrow-down:before {
   content: "\f0ab";
 }
 
-/* line 441, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003441}}
 .icon-globe:before {
   content: "\f0ac";
 }
 
-/* line 442, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003442}}
 .icon-wrench:before {
   content: "\f0ad";
 }
 
-/* line 443, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003443}}
 .icon-tasks:before {
   content: "\f0ae";
 }
 
-/* line 445, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003445}}
 .icon-filter:before {
   content: "\f0b0";
 }
 
-/* line 446, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003446}}
 .icon-briefcase:before {
   content: "\f0b1";
 }
 
-/* line 447, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003447}}
 .icon-fullscreen:before {
   content: "\f0b2";
 }
 
-/* line 449, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003449}}
 .icon-group:before {
   content: "\f0c0";
 }
 
-/* line 450, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003450}}
 .icon-link:before {
   content: "\f0c1";
 }
 
-/* line 451, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003451}}
 .icon-cloud:before {
   content: "\f0c2";
 }
 
-/* line 452, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003452}}
 .icon-beaker:before {
   content: "\f0c3";
 }
 
-/* line 453, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003453}}
 .icon-cut:before {
   content: "\f0c4";
 }
 
-/* line 454, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003454}}
 .icon-copy:before {
   content: "\f0c5";
 }
 
-/* line 455, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003455}}
 .icon-paper-clip:before {
   content: "\f0c6";
 }
 
-/* line 456, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003456}}
 .icon-save:before {
   content: "\f0c7";
 }
 
-/* line 457, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003457}}
 .icon-sign-blank:before {
   content: "\f0c8";
 }
 
-/* line 458, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003458}}
 .icon-reorder:before {
   content: "\f0c9";
 }
 
-/* line 459, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003459}}
 .icon-list-ul:before {
   content: "\f0ca";
 }
 
-/* line 460, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003460}}
 .icon-list-ol:before {
   content: "\f0cb";
 }
 
-/* line 461, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003461}}
 .icon-strikethrough:before {
   content: "\f0cc";
 }
 
-/* line 462, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003462}}
 .icon-underline:before {
   content: "\f0cd";
 }
 
-/* line 463, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003463}}
 .icon-table:before {
   content: "\f0ce";
 }
 
-/* line 465, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003465}}
 .icon-magic:before {
   content: "\f0d0";
 }
 
-/* line 466, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003466}}
 .icon-truck:before {
   content: "\f0d1";
 }
 
-/* line 467, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003467}}
 .icon-pinterest:before {
   content: "\f0d2";
 }
 
-/* line 468, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003468}}
 .icon-pinterest-sign:before {
   content: "\f0d3";
 }
 
-/* line 469, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003469}}
 .icon-google-plus-sign:before {
   content: "\f0d4";
 }
 
-/* line 470, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003470}}
 .icon-google-plus:before {
   content: "\f0d5";
 }
 
-/* line 471, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003471}}
 .icon-money:before {
   content: "\f0d6";
 }
 
-/* line 472, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003472}}
 .icon-caret-down:before {
   content: "\f0d7";
 }
 
-/* line 473, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003473}}
 .icon-caret-up:before {
   content: "\f0d8";
 }
 
-/* line 474, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003474}}
 .icon-caret-left:before {
   content: "\f0d9";
 }
 
-/* line 475, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003475}}
 .icon-caret-right:before {
   content: "\f0da";
 }
 
-/* line 476, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003476}}
 .icon-columns:before {
   content: "\f0db";
 }
 
-/* line 477, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003477}}
 .icon-sort:before {
   content: "\f0dc";
 }
 
-/* line 478, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003478}}
 .icon-sort-down:before {
   content: "\f0dd";
 }
 
-/* line 479, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003479}}
 .icon-sort-up:before {
   content: "\f0de";
 }
 
-/* line 481, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003481}}
 .icon-envelope-alt:before {
   content: "\f0e0";
 }
 
-/* line 482, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003482}}
 .icon-linkedin:before {
   content: "\f0e1";
 }
 
-/* line 483, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003483}}
 .icon-undo:before {
   content: "\f0e2";
 }
 
-/* line 484, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003484}}
 .icon-legal:before {
   content: "\f0e3";
 }
 
-/* line 485, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003485}}
 .icon-dashboard:before {
   content: "\f0e4";
 }
 
-/* line 486, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003486}}
 .icon-comment-alt:before {
   content: "\f0e5";
 }
 
-/* line 487, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003487}}
 .icon-comments-alt:before {
   content: "\f0e6";
 }
 
-/* line 488, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003488}}
 .icon-bolt:before {
   content: "\f0e7";
 }
 
-/* line 489, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003489}}
 .icon-sitemap:before {
   content: "\f0e8";
 }
 
-/* line 490, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003490}}
 .icon-umbrella:before {
   content: "\f0e9";
 }
 
-/* line 491, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003491}}
 .icon-paste:before {
   content: "\f0ea";
 }
 
-/* line 492, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003492}}
 .icon-lightbulb:before {
   content: "\f0eb";
 }
 
-/* line 493, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003493}}
 .icon-exchange:before {
   content: "\f0ec";
 }
 
-/* line 494, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003494}}
 .icon-cloud-download:before {
   content: "\f0ed";
 }
 
-/* line 495, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003495}}
 .icon-cloud-upload:before {
   content: "\f0ee";
 }
 
-/* line 497, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003497}}
 .icon-user-md:before {
   content: "\f0f0";
 }
 
-/* line 498, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003498}}
 .icon-stethoscope:before {
   content: "\f0f1";
 }
 
-/* line 499, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003499}}
 .icon-suitcase:before {
   content: "\f0f2";
 }
 
-/* line 500, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003500}}
 .icon-bell-alt:before {
   content: "\f0f3";
 }
 
-/* line 501, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003501}}
 .icon-coffee:before {
   content: "\f0f4";
 }
 
-/* line 502, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003502}}
 .icon-food:before {
   content: "\f0f5";
 }
 
-/* line 503, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003503}}
 .icon-file-alt:before {
   content: "\f0f6";
 }
 
-/* line 504, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003504}}
 .icon-building:before {
   content: "\f0f7";
 }
 
-/* line 505, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003505}}
 .icon-hospital:before {
   content: "\f0f8";
 }
 
-/* line 506, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003506}}
 .icon-ambulance:before {
   content: "\f0f9";
 }
 
-/* line 507, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003507}}
 .icon-medkit:before {
   content: "\f0fa";
 }
 
-/* line 508, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003508}}
 .icon-fighter-jet:before {
   content: "\f0fb";
 }
 
-/* line 509, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003509}}
 .icon-beer:before {
   content: "\f0fc";
 }
 
-/* line 510, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003510}}
 .icon-h-sign:before {
   content: "\f0fd";
 }
 
-/* line 511, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003511}}
 .icon-plus-sign-alt:before {
   content: "\f0fe";
 }
 
-/* line 513, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003513}}
 .icon-double-angle-left:before {
   content: "\f100";
 }
 
-/* line 514, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003514}}
 .icon-double-angle-right:before {
   content: "\f101";
 }
 
-/* line 515, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003515}}
 .icon-double-angle-up:before {
   content: "\f102";
 }
 
-/* line 516, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003516}}
 .icon-double-angle-down:before {
   content: "\f103";
 }
 
-/* line 517, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003517}}
 .icon-angle-left:before {
   content: "\f104";
 }
 
-/* line 518, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003518}}
 .icon-angle-right:before {
   content: "\f105";
 }
 
-/* line 519, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003519}}
 .icon-angle-up:before {
   content: "\f106";
 }
 
-/* line 520, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003520}}
 .icon-angle-down:before {
   content: "\f107";
 }
 
-/* line 521, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003521}}
 .icon-desktop:before {
   content: "\f108";
 }
 
-/* line 522, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003522}}
 .icon-laptop:before {
   content: "\f109";
 }
 
-/* line 523, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003523}}
 .icon-tablet:before {
   content: "\f10a";
 }
 
-/* line 524, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003524}}
 .icon-mobile-phone:before {
   content: "\f10b";
 }
 
-/* line 525, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003525}}
 .icon-circle-blank:before {
   content: "\f10c";
 }
 
-/* line 526, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003526}}
 .icon-quote-left:before {
   content: "\f10d";
 }
 
-/* line 527, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003527}}
 .icon-quote-right:before {
   content: "\f10e";
 }
 
-/* line 529, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003529}}
 .icon-spinner:before {
   content: "\f110";
 }
 
-/* line 530, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003530}}
 .icon-circle:before {
   content: "\f111";
 }
 
-/* line 531, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003531}}
 .icon-reply:before {
   content: "\f112";
 }
 
-/* line 532, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003532}}
 .icon-github-alt:before {
   content: "\f113";
 }
 
-/* line 533, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003533}}
 .icon-folder-close-alt:before {
   content: "\f114";
 }
 
-/* line 534, ../../app/styles/font-awesome.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/heymath\/Sites\/Github\/cubbyTeddy\/mobile\/app\/styles\/font-awesome\.scss}line{font-family:\00003534}}
 .icon-folder-open-alt:before {
   content: "\f115";
 }

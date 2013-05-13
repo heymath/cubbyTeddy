@@ -2,12 +2,12 @@ define(
     [
         'backbone',
         'vendor/BaseView',
-        'text!templates/home/home.html'
+        'text!templates/apps/config.html'
     ],
     
-    function(Backbone,BaseView,homeTemplate){
+    function(Backbone,BaseView,configTemplate){
         
-        var HomeView = BaseView.extend({
+        var ConfigView = BaseView.extend({
             
             initialize: function(){
                 
@@ -15,7 +15,7 @@ define(
             
             el: '#view',
 
-            template: _.template(homeTemplate),
+            template: _.template(configTemplate),
 
             events: {
                 
@@ -23,12 +23,11 @@ define(
             
             render: function(){
                 this.$el.empty();
-                $('#view').removeClass('no_padding');
                 this.$el.append(this.template());
                 return this;
             }
         });
         
-        return HomeView;
+        return ConfigView;
     }
 );

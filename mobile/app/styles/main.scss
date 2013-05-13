@@ -1,15 +1,16 @@
 /*************************************************************/
-/************************** COLORS **************************/
+/************************** VARIABLES **************************/
 /***********************************************************/
 
-$bg_body: #fff;
-$bg_body_dark: #f7f7f7;
-
 $white: #FFFFFF;
+$white_dark: #E7E8E7;
 $black: #000000;
 
+$blue_medium: #516276;
+$blue_dark: #374555;
+
 $orange_light: #ffc741;
-$orange_medium: #ffb400;
+$orange_medium: #f0683e;
 $orange_dark: #eda700;
 
 $grey_ultra_light: #fafafa;
@@ -19,6 +20,9 @@ $grey_dark: #999999;
 $grey_ultra_dark: #474747;
 
 
+$padding:14px;
+$url_motif_white:'../images/motif_white.png';
+$url_motif_black:'../images/motif_black.png';
 
 /*************************************************************/
 /************************* MIXINS ***************************/
@@ -84,13 +88,13 @@ $grey_ultra_dark: #474747;
        -moz-box-shadow: $x $y $blur $rgba $inset;
             box-shadow: $x $y $blur $rgba $inset;
 }
-@import "font-awesome";
+@import 'font-awesome';
 
 @font-face {
-  font-family: 'DidactGothic';
-  src: url('../fonts/DidactGothic');
-  font-weight: normal;
-  font-style: normal;
+  font-family:'Oswald';
+  src:url('../fonts/Oswald-Light.otf');
+  font-weight:normal;
+  font-style:normal;
 }
 
 /*************************************************************/
@@ -98,7 +102,8 @@ $grey_ultra_dark: #474747;
 /***********************************************************/
 
 body{
-    background: white;
+    background-color:$blue_dark;
+    background-image:url($url_motif_black);
     margin:0;
     padding:0;
     font-family:Helvetica,Arial,sans-serif;
@@ -114,24 +119,6 @@ body{
     #main_container{
         position:relative;
         margin:0 auto;
-        min-width:320px;
-        max-width:320px;
-        padding-top:36px;
-        
-        i.arrow{
-            background-image:url('../images/arrow.png');
-            background-repeat:no-repeat;
-            background-size:44px 26px;
-            opacity:0.1;
-            
-            &.arrow-left{
-                background-position:0px 0px;
-            }
-            
-            &.arrow-right{
-                background-position:-22px 0px;
-            }
-        }
         
         h1, h2, h3, h4, h5, h6{
             padding:0;
@@ -148,76 +135,71 @@ body{
         
         #header_container{
             width:100%;
-            height:50px;
+            height:80px;
             position:fixed;
             z-index:10;
             left:0;
             top:0;
-            @include simple_gradient($orange_light, 0%, $orange_medium, 100%);
-            border-bottom:1px solid $orange_dark;
+            background-color:$white;
+            background-image:url($url_motif_white);
             
             #header{
-                width:320px;
-                height:50px;
+                height:80px;
                 margin:0 auto;
-                
-                div{
-                    width:100%;
+                text-align:center;
+                position:relative;
+                    
+                #logo{
+                    display:inline-block;
                     height:50px;
-                    font-size:20px;
-                    line-height:50px;
-                    text-align:center;
-                    color:$white;
-                    margin:0;
-                    padding:0;
+                    width:50px;
+                    position:absolute;
+                    top:15px;
+                    right:$padding;
+                    background:url('../images/domi.png');
+                }
 
-                    #back{
-                        width:50px;
-                        height:50px;
-                        display:block;
-                        float:left;
-                        position:relative;
-                        
-                        .spliter{
-                            padding:0 1px;
-                            height:50px;
-                            background-color:rgba(0,0,0,0.1);
-                            display:inline-block;
-                            top:0;
-                            right:-1px;
-                            position:absolute;
-                            
-                            span{
-                                width:1px;
-                                height:50px;
-                                background-color:$orange_dark;
-                                display:inline-block;
-                            }
-                        }
-                        
-                        i{
-                            width:50px;
-                            height:50px;
-                            font-size:30px;
-                            line-height:50px;
-                            display:block;
-                        }
-                        
-                        &:active{
-                            background-image: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-                            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-                            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                            background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-                        }
+                #back{
+                    width:50px;
+                    height:50px;
+                    font-size:30px;
+                    line-height:50px;
+                    display:inline-block;
+                    position:absolute;
+                    left:$padding;
+                    top:15px;
+                    color:$blue_dark;
+                    text-decoration:none;
+                    
+                    &:active{
+                        color:$blue_medium;
                     }
                 }
             }
         }
+
+        #footer_container{
+            width:100%;
+            height:$padding;
+            position:fixed;
+            z-index:10;
+            left:0;
+            bottom:0;
+            background-color:$white;
+            background-image:url($url_motif_white);
+
+            #footer{
+                height:80px;
+                margin:0 auto;
+            }
+        }
         
         #view{
-            padding-top:40px;
+            padding:94px $padding $padding $padding;
+            
+            &.no_padding{
+                padding:80px 0 14px 0;
+            }
 
             #home{
                 display:inline-block;
@@ -225,43 +207,121 @@ body{
                 width:100%;
                 
                 .app{
-                    @include simple_gradient($orange_light, 0%, $orange_dark, 100%);
-                    @include box_shadow(0px, 1px, 10px, $black);
-                    @include radius(6px);
+                    @include simple_gradient($white, 0%, $white_dark, 100%);
+                    background-color:$white_dark;
                     display:inline-block;
-                    width:90px;
-                    height:90px;
-                    color:$white;
+                    width:86px;
+                    height:84px;
+                    color:$blue_medium;
                     position:relative;
                     text-align:center;
                     font-size:40px;
-                    line-height:90px;
-                    margin-right:20px;
-                    margin-bottom:40px;
+                    line-height:66px;
+                    margin:0 $padding $padding 0;
+                    border-bottom:2px solid $orange_medium;
                     
                     span{
                         overflow:hidden;
                         position:absolute;
-                        bottom:-30px;
+                        bottom:5px;
                         left:0;
-                        font-size:20px;
-                        line-height:20px;
-                        color:$black;
-                        text-transform:uppercase;
-                        width:90px;
-                        font-family:DidactGothic;
+                        font-size:13px;
+                        line-height:18px;
+                        color:$blue_dark;
+                        font-weight:bold;
+                        //text-shadow:0px 2px 3px $black;
+                        width:86px;
+                        font-family:'Oswald';
+
+                        &:first-letter{
+                            text-transform:uppercase;
+                        }
                     }
                     
                     &:active{
-                        background:$orange_dark;
+                        @include simple_gradient($blue_medium, 0%, $blue_dark, 100%);
+                        color:$white_dark;
+
+                        span{
+                            color:$white_dark;
+                        }
                     }
 
                     &:nth-of-type(3n+3){
                         margin-right:0;
                     }
                 }
+
+                /*#micro{
+                    display:block;
+                    width:110px;
+                    height:110px;
+                    margin:0 auto;
+                    background-image:url('../images/micro.png');
+                }*/
+                #micro{
+                    @include radius(50%);
+                    display:block;
+                    width:100px;
+                    height:100px;
+                    position:fixed;
+                    left:50%;
+                    margin-left:-55px;
+                    bottom:30px;
+                    //margin-bottom:-55px;
+                    text-decoration:none;
+                    background-color:$white;
+                    background-image:url($url_motif_white);
+                    border:5px solid $blue_medium;
+
+                    span{
+                        line-height:40px;
+                        font-size:40px;
+                        width:40px;
+                        height:40px;
+                        display:block;
+                        position:absolute;
+                        left:50%;
+                        bottom:50%;
+                        margin-left:-20px;
+                        margin-bottom:-20px;
+                        color:$blue_dark;
+                    }
+
+                    &:active{
+                        background-color:$blue_medium;
+                        background-image:url($url_motif_black);
+                        border:5px solid $white_dark;
+
+                        span{
+                            color:$white_dark;
+                        }
+                    }
+                }
+            }
+
+            #config{
+                
+            }
+
+            #map{
+                width:100%;
             }
         }
+    }
+}
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    body{
+        #main_container{
+            #header_container{
+                #header{
+                    #logo{
+                        background-size:50px 50px;
+                        background-image:url('../images/domi@2x.png');
+                    }
+                }
+            }
+        }
     }
 }

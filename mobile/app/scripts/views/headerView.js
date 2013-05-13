@@ -20,9 +20,8 @@ define(
             render: function(){
                 html = "<section id='header_container'>";
                     html += "<header id='header'>";
-                        html += "<div>cubbyTeddy";
-                            html += "<a href='#' style='display:none' id='back'><i class='icon-reply'></i><span class='spliter'><span></span></span></a>";
-                        html += "</div>";
+                        html += "<a href='#' id='back' class='icon-reply'></a>";
+                        html += "<i id='logo'></i>";
                     html += "</header>";
                 html += "</section>";
                 this.$el.append(html);
