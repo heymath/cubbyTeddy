@@ -18,11 +18,22 @@ var express = require('express')
 
 ;
 
-<<<<<<< HEAD
-var lol = 'lollol';
+global.domy = {
 
-=======
->>>>>>> e5c68860f1a8beaddc59f2065a444b01bec51284
+  sentiment:10,
+  speak:[
+    {
+     msg:'tu es nul',
+     statut:0
+    },
+    {
+      msg:"default",
+      statut:0
+    }
+  ]
+}
+
+console.log(global.domy);
 
 var app = express();
 var server = http.createServer(app);
@@ -44,17 +55,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.post('/yumi',action.speak);
+app.post('/domi',action.speak);
 
 http.createServer(app).listen(app.get('port'), function(){
 
   console.log('Express server listening on port ' + app.get('port'));
-<<<<<<< HEAD
-  
-    speak.speak("Alors que je lui raconte ma journée, mon fils de seize ans m'interrompt.");
-    speak.speak("Aujourd'hui, nous prenons la voiture et mon mari conduit.");
 
+    //speak.speak("Alors que je lui raconte ma journée, mon fils de seize ans m'interrompt.");
+    //speak.speak("Aujourd'hui, nous prenons la voiture et mon mari conduit.");
 });
-=======
-});
->>>>>>> e5c68860f1a8beaddc59f2065a444b01bec51284
