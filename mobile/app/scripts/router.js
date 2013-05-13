@@ -2,11 +2,12 @@ define(
     [
         'backbone',
         'views/headerView',
+        'views/footerView',
         'views/home/homeView',
-        'views/apps/speakView'
+        'views/apps/configView'
     ],
     
-    function(Backbone,HeaderView,HomeView,SpeakView){
+    function(Backbone,HeaderView,FooterView,HomeView,ConfigView){
          
         var AppRouter = Backbone.Router.extend({
             
@@ -16,7 +17,7 @@ define(
 
             routes:{
                 '': 'home',
-                'speak': 'speak'
+                'config': 'config'
             },
 
             home : function(){
@@ -26,10 +27,10 @@ define(
                 homeView.render();
             },
 
-            speak : function(){
+            config : function(){
                 console.log("Routage vers la view speak");
-                speakView = new SpeakView({router: this})
-                speakView.render();
+                configView = new ConfigView({router: this})
+                configView.render();
                 this.app.view.headerView.show_btn_back();
             }
         });
@@ -38,6 +39,8 @@ define(
             var app_router = new AppRouter;
             app_router.app.view.headerView = new HeaderView({router: this});
             app_router.app.view.headerView.render();
+            app_router.app.view.footerView = new FooterView({router: this});
+            app_router.app.view.footerView.render();
             Backbone.history.start();
         }
         

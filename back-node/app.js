@@ -5,15 +5,15 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , test = require('./routes/transformtotext')
+  , speakToText = require('./routes/texttospeak')
+  , textToSpeak = require('./routes/transformtotext')
   , http = require('http')
   , path = require('path')
   , cons = require('consolidate')
   , _ = require('underscore')
-  , formidable = require('formidable')
+  , action = require('./routes/speak')
 ;
 
-console.log(formidable);
 
 var app = express();
 var server = http.createServer(app);
@@ -35,8 +35,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.post('/transformtext',test.transformToText);
+app.post('/transformtext',textToSpeak.transformToText);
+app.get('/speak',speakToText.texttospeak);
+app.post('/yumi',action.speak);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
