@@ -1625,7 +1625,7 @@ body {
   background-image: url("../images/motif_black.png");
   margin: 0;
   padding: 0;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Oswald,Helvetica,Arial,sans-serif;
   font-size: 12px;
   line-height: 18px;
   color: #666666;
@@ -1656,7 +1656,7 @@ body #main_container hr {
 /* line 136, ../../app/styles/main.scss */
 body #main_container #header_container {
   width: 100%;
-  height: 80px;
+  height: 45px;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -1666,7 +1666,7 @@ body #main_container #header_container {
 }
 /* line 146, ../../app/styles/main.scss */
 body #main_container #header_container #header {
-  height: 80px;
+  height: 45px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -1674,23 +1674,23 @@ body #main_container #header_container #header {
 /* line 152, ../../app/styles/main.scss */
 body #main_container #header_container #header #logo {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   position: absolute;
-  top: 15px;
+  top: 7px;
   right: 14px;
   background: url("../images/domi.png");
 }
 /* line 162, ../../app/styles/main.scss */
 body #main_container #header_container #header #back {
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-  line-height: 50px;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  line-height: 35px;
   display: inline-block;
   position: absolute;
   left: 14px;
-  top: 15px;
+  top: 7px;
   color: #374555;
   text-decoration: none;
 }
@@ -1767,13 +1767,12 @@ body #main_container #view #home .app span {
   color: #374555;
   font-weight: bold;
   width: 86px;
-  font-family: 'Oswald';
 }
-/* line 236, ../../app/styles/main.scss */
+/* line 235, ../../app/styles/main.scss */
 body #main_container #view #home .app span:first-letter {
   text-transform: uppercase;
 }
-/* line 241, ../../app/styles/main.scss */
+/* line 240, ../../app/styles/main.scss */
 body #main_container #view #home .app:active {
   background-color: #516276;
   background-image: -moz-linear-gradient(top, #516276 0%, #374555 100%);
@@ -1784,15 +1783,15 @@ body #main_container #view #home .app:active {
   background-image: linear-gradient(to bottom, #516276 0%, #374555 100%);
   color: #e7e8e7;
 }
-/* line 245, ../../app/styles/main.scss */
+/* line 244, ../../app/styles/main.scss */
 body #main_container #view #home .app:active span {
   color: #e7e8e7;
 }
-/* line 250, ../../app/styles/main.scss */
+/* line 249, ../../app/styles/main.scss */
 body #main_container #view #home .app:nth-of-type(3n+3) {
   margin-right: 0;
 }
-/* line 262, ../../app/styles/main.scss */
+/* line 261, ../../app/styles/main.scss */
 body #main_container #view #home #micro {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1809,7 +1808,7 @@ body #main_container #view #home #micro {
   background-image: url("../images/motif_white.png");
   border: 5px solid #516276;
 }
-/* line 277, ../../app/styles/main.scss */
+/* line 275, ../../app/styles/main.scss */
 body #main_container #view #home #micro span {
   line-height: 40px;
   font-size: 40px;
@@ -1823,25 +1822,73 @@ body #main_container #view #home #micro span {
   margin-bottom: -20px;
   color: #374555;
 }
-/* line 291, ../../app/styles/main.scss */
+/* line 289, ../../app/styles/main.scss */
 body #main_container #view #home #micro:active {
   background-color: #516276;
   background-image: url("../images/motif_black.png");
   border: 5px solid #e7e8e7;
 }
-/* line 296, ../../app/styles/main.scss */
+/* line 294, ../../app/styles/main.scss */
 body #main_container #view #home #micro:active span {
   color: #e7e8e7;
 }
-/* line 307, ../../app/styles/main.scss */
+/* line 305, ../../app/styles/main.scss */
 body #main_container #view #map {
   width: 100%;
 }
+/* line 309, ../../app/styles/main.scss */
+body #main_container #view #alertes {
+  color: #516276;
+}
+/* line 313, ../../app/styles/main.scss */
+body #main_container #view #alertes form.onOff {
+  background-color: #e7e8e7;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid #f0683e;
+}
+/* line 319, ../../app/styles/main.scss */
+body #main_container #view #alertes form.onOff i {
+  font-size: 25px;
+  margin-left: 14px;
+}
+/* line 324, ../../app/styles/main.scss */
+body #main_container #view #alertes form.onOff span {
+  padding-left: 14px;
+  font-size: 20px;
+}
+/* line 329, ../../app/styles/main.scss */
+body #main_container #view #alertes form.onOff input.on, body #main_container #view #alertes form.onOff input.off {
+  float: right;
+  height: 60px;
+}
+/* line 336, ../../app/styles/main.scss */
+body #main_container #view #alertes form.logins input, body #main_container #view #alertes form.logins label {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+/* line 343, ../../app/styles/main.scss */
+body #main_container #view #alertes form.logins input {
+  float: right;
+  padding: 0;
+  background: #e7e8e7;
+  color: #516276;
+  border: none;
+}
+/* line 350, ../../app/styles/main.scss */
+body #main_container #view #alertes form.logins label {
+  float: left;
+  font-size: 20px;
+  color: #e7e8e7;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
-  /* line 319, ../../app/styles/main.scss */
+  /* line 367, ../../app/styles/main.scss */
   body #main_container #header_container #header #logo {
-    background-size: 50px 50px;
+    background-size: 35px 35px;
     background-image: url("../images/domi@2x.png");
   }
 }
