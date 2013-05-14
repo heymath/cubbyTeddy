@@ -12,8 +12,28 @@ var express = require('express')
   , cons = require('consolidate')
   , _ = require('underscore')
   , action = require('./routes/speak')
+  , blague = require('./lib/blague')
+  , speak = require('./lib/speak.js')
+  , async = require('async')
+
 ;
 
+global.domy = {
+
+  sentiment:10,
+  speak:[
+    {
+     msg:'tu es nul',
+     statut:0
+    },
+    {
+      msg:"default",
+      statut:0
+    }
+  ]
+}
+
+console.log(global.domy);
 
 var app = express();
 var server = http.createServer(app);
@@ -35,10 +55,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.post('/transformtext',textToSpeak.transformToText);
-app.get('/speak',speakToText.texttospeak);
-app.post('/yumi',action.speak);
+app.post('/domi',action.speak);
 
 http.createServer(app).listen(app.get('port'), function(){
+
   console.log('Express server listening on port ' + app.get('port'));
+
+    //speak.speak("Alors que je lui raconte ma journée, mon fils de seize ans m'interrompt.");
+    //speak.speak("Aujourd'hui, nous prenons la voiture et mon mari conduit.");
 });

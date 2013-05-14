@@ -1,9 +1,11 @@
-#Mobile
+xé#Mobile
 mobile/temp
 mobile/dist
 mobile/.sass-cache
 mobile/.project
 mobile/.DS_Store
+mobile/app/.DS_Store
+mobile/app/scripts/views/.DS_Store
 
 #Eclipse
 .buildpath
@@ -12,11 +14,12 @@ mobile/.DS_Store
 .settings/org.eclipse.core.runtime.prefs
 .settings/org.eclipse.php.core.prefs
 .settings/org.eclipse.wst.common.project.facet.core.xml
-mysql.sock
-app/spool/*
+
 
 #Mac
 .DS_Store
 
 #node-back
 back-node/node_modules
+
+mobile/.DS_Store

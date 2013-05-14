@@ -8,6 +8,11 @@ exports.speak = function(req, res){
   ,	exec=require('child_process').exec
   ;
 
+
+    var domy = global.domy;
+
+    console.log(domy);
+
     nameFile = req.files["file"].path.split('/')[1];
 
     var fileTmp = './tmp/'+nameFile+'.flac';
@@ -38,25 +43,73 @@ exports.speak = function(req, res){
                   try{
                     phrase = JSON.parse(body);
                     console.log(phrase.hypotheses[0].utterance);
+
                     switch (phrase.hypotheses[0].utterance){
+
                     	case "j\'aime les pâtes":
                     		console.log('Moi aussi kévin');
                     		speak("SUPER! moi aussi kevin".replace(/ /g,'%20'));
                     	break;
+
                     	case "Bonjour":
                     		speak("Bonjour Kévin. Comment vas tu ?".replace(/ /g,'%20'));
                     	break;
+
                     	case "allô":
-							speak("Non mais ALLO !..... TOM !".replace(/ /g,'%20'));
+							         speak("Non mais ALLO !..... TOM !".replace(/ /g,'%20'));
                     	break;
+
                     	case "quel est la météo aujourd'hui":
-						    speak("il va pleuvoir ! et il va faire 18 degrer. Tu devrais prendre un parapluie.".replace(/ /g,'%20'));
+						            speak("il va pleuvoir ! et il va faire 18 degrer. Tu devrais prendre un parapluie.".replace(/ /g,'%20'));
                     	break;
+
                     	case "allumé la cafetière":
                     		speak("C'est en cours".replace(/ /g,'%20'));
                     	break;
+
+                      case domy.speak[0].msg:
+
+                        switch(domy.speak[0].statut){
+
+                          case 0:
+
+                            speak("Non sait toi".replace(/ /g,'%20'));
+                            domy.speak[0].statut++;
+                          break;
+
+                          case 1:
+
+                            speak("Ne tente pas de me provoquer.".replace(/ /g,'%20'));
+                            domy.speak[0].statut++;
+                          break;
+
+                          case 2:
+                            speak("Si cela ne te plais pas demande le a quelqu’un d’autre!".replace(/ /g,'%20'));
+                            domy.speak[0].statut=0;
+                          break;
+
+                        }
+                      
+                      break;
+
                     	default:
-                    		speak("Excusez moi, Je ne comprends pas "+phrase.hypotheses[0].utterance+" !".replace(/ /g,'%20'));
+                        switch(domy.speak[1].statut){
+
+                          case 0:
+                            speak("Désolée, je ne comprends pas, pourrais-tu réessayer?".replace(/ /g,'%20'));
+                            domy.speak[1].statut++;
+                          break;
+
+                          case 1:
+                            speak("Je ne comprends TOUJOURS pas".replace(/ /g,'%20'));
+                            domy.speak[1].statut++;
+                          break;
+
+                          case 2:
+                            speak("Ce n’est plus la peine de réessayer, arrete toi".replace(/ /g,'%20'));
+                            domy.speak[1].statut=0;
+                          break;
+                        }
                     	break;
                     }
                     //console.log(JSON.parse(body));
@@ -87,9 +140,7 @@ exports.speak = function(req, res){
 
 	  var yumi = fs.createWriteStream(fileTmpPath+'/'+realname);
 	  yumi.on('close', function() {
-		 	console.log('lol');
 	   		cmd = 'mpg321 '+fileTmpPath+'/'+realname;
-	   		console.log(cmd);
 	   		function puts(error, stdout, stderr) { console.log(stdout) }
 	   		exec(cmd, puts);
 	  });
