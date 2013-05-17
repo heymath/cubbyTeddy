@@ -5,10 +5,11 @@ define(
         'views/footerView',
         'views/home/homeView',
         'views/apps/configView',
-        'views/apps/mapView'
+        'views/apps/mapView',
+        'views/apps/alertesView'
     ],
     
-    function(Backbone,HeaderView,FooterView,HomeView,ConfigView,MapView){
+    function(Backbone,HeaderView,FooterView,HomeView,ConfigView,MapView,AlertesView){
          
         var AppRouter = Backbone.Router.extend({
             
@@ -19,7 +20,8 @@ define(
             routes:{
                 '': 'home',
                 'config': 'config',
-                'map': 'map'
+                'map': 'map',
+                'alertes': 'alertes'
             },
 
             home : function(){
@@ -40,6 +42,13 @@ define(
                 console.log("Routage vers la view map");
                 mapView = new MapView({router: this})
                 mapView.render();
+                this.app.view.headerView.show_btn_back();
+            },
+
+            alertes : function(){
+                console.log("Routage vers la view alertes");
+                alertesView = new AlertesView({router: this})
+                alertesView.render();
                 this.app.view.headerView.show_btn_back();
             }
         });
