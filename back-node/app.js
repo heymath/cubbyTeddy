@@ -21,10 +21,22 @@ var express = require('express')
   , request = require('request')
   , exec=require('child_process').exec
   , Imap = require('imap')
-  , inspect = require('util').inspect;
+  , inspect = require('util').inspect
+  , cron = require('later').cronParser
+  , later = require('later').later
+  , text = require('later').enParser
+  , recur = require('later').recur
+  , Forecast = require('forecast.io')
+  , util = require ('util')
+  , log = require('log')
   ;
 
 ;
+
+  var options = {
+    APIKey: "0e9e9faeff918cd7a893fe3f6c2419ce",
+  }
+  forecast = new Forecast(options);
 
   var speak = function(sentence){
 
@@ -41,7 +53,10 @@ var express = require('express')
     var yumi = fs.createWriteStream(fileTmpPath+'/'+realname);
     yumi.on('close', function() {
         cmd = 'mpg321 '+fileTmpPath+'/'+realname;
-        function puts(error, stdout, stderr) { console.log(stdout) }
+        function puts(error, stdout, stderr) { 
+          console.log(stdout) 
+          fs.unlinkSync(fileTmpPath+'/'+realname);
+        }
         exec(cmd, puts);
     });
 
@@ -51,7 +66,6 @@ var express = require('express')
     }).pipe(yumi);
 
   }
-
 var app = express();
 /* Serveur express */
 
@@ -83,7 +97,8 @@ var domySchema = new mongoose.Schema({
   sentiment : { type : Number },
   reveil : { type: Date},
   speak : { type: Array},
-  name : {type: String}
+  name : {type: String},
+  schedule : { type: Object}
 });
 
 var mongoModel = mongoose.model('domy',domySchema);
@@ -103,6 +118,11 @@ global.domy = {
       statut:0
     }
   ],
+  schedule:{
+    weather : {
+      statut:0
+    }
+  },
   reveil : new Date()
 }
 
@@ -118,9 +138,8 @@ var query = mongoModel.find(null);
           if (err) { throw err; }
         });
       }else{
-        console.log('on utilise les infos de mongo');
+        console.log('Récupèration mongo OK');
         global.domy  = domy[0];
-        console.log(global.domy)
       }
 });
 
@@ -200,9 +219,118 @@ var query = mongoModel.find(null);
 /* FIN DU ROUTAGE  */
 
 
-/* API ARDUINO */
 
 
+
+
+
+
+/* HORLOGE */
+  var minutes = [];
+
+  for (var i = 0; i<60; i++){
+    minutes.push(i);
+  }
+
+  mSched = {
+    schedules :
+   [ 
+      { 
+        h: [
+        0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+        ]
+      },
+      {
+        m: minutes
+      }
+   ]
+ };
+
+  actionDomi = function(){
+    
+    //condition a réalisé suivant arduino ou meteo
+
+
+    //METEO
+    forecast.get(48.8517799,2.4204908000000387, {"units":"si"},function (err, res, data) {
+      if (err) throw err;
+      var temp = parseInt(data.currently.temperature);
+      console.log(temp);
+      if(temp >= -3 && temp <10){
+        switch(domy.schedule.weather.statut){
+
+          case 0:
+            speak ('Il fait vraiment froid dehors couvre toi bien !'+' il fait ' + temp + ' degrai');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 1:
+            speak ('Il fait vraiment froid dehors couvre toi bien !'+' il fait ' + temp + ' degrai');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 2:
+            speak ('Il fait vraiment froid dehors couvre toi bien !'+' il fait ' + temp + ' degrai');
+            domy.schedule.weather.statut=0;
+          break;
+
+        }
+      }
+
+      console.log(domy.schedule.weather);
+
+      if(temp >= 10 && temp <=19){
+        switch(domy.schedule.weather.statut){
+
+          case 0:
+            speak ('Il ne fait pas trop chaud ! Il fait ' + temp + ' degrai .');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 1:
+            speak ('Vivement une belle saison pour bronzé au soleil. car la il fait ' + temp + 'degrai .');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 2:
+            speak ("j'en ai marre du temps, il fait " + temp + 'degrai .');
+            domy.schedule.weather.statut=0;
+          break;
+
+        }
+        
+      }
+      if(temp > 20 && temp <30){
+        
+          switch(domy.schedule.weather.statut){
+
+          case 0:
+            speak ('ENFIN ! il fait chaud profite pour sortir un peu, il fait' + temp + ' degrai .');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 1:
+            speak ('Et si on allait a la plage ? il fait ' + temp + ' degrai .');
+            domy.schedule.weather.statut++;
+          break;
+
+          case 2:
+            speak ("Et si on prenait une glace avec cette température de " + temp + 'degrai .');
+            domy.schedule.weather.statut=0;
+          break;
+
+        }
+
+      }
+    });
+
+  }
+
+
+
+  l = later(60)
+  l.exec(mSched, (new Date()), actionDomi);
+/* FIN HORLOGE  */
 
 
 http.createServer(app).listen(app.get('port'), function(){

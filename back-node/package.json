@@ -15,6 +15,10 @@
     "consolidate": "*",
     "geoip-lite": "*",
     "mongoose": "*",
-    "imap": "*"
+    "imap": "*",
+    "later":"*",
+    "forecast.io":"*",
+    "util":"*",
+    "log":"*"
   }
 }
