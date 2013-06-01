@@ -54,8 +54,6 @@ var express = require('express')
     }).pipe(yumi);
 
   }
-
-speak ('lol');
 var app = express();
 /* Serveur express */
 
@@ -122,9 +120,8 @@ var query = mongoModel.find(null);
           if (err) { throw err; }
         });
       }else{
-        console.log('on utilise les infos de mongo');
+        console.log('Récupèration mongo OK');
         global.domy  = domy[0];
-        console.log(global.domy)
       }
 });
 
