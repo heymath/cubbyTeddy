@@ -21,3 +21,6 @@ app/spool/*
 #node-back
 back-node/node_modules/*
 back-node/tmp/*
+
+
+tmp/*
