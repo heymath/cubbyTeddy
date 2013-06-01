@@ -21,7 +21,7 @@ var express = require('express')
   , request = require('request')
   , exec=require('child_process').exec
   , Imap = require('imap')
-  , inspect = require('util').inspect;e
+  , inspect = require('util').inspect;
   ;
 
 ;
