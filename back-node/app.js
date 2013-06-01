@@ -17,14 +17,11 @@ var express = require('express')
   , async = require('async')
   , mongoose = require('mongoose')
   , geoip = require('geoip-lite')
-<<<<<<< HEAD
   , fs = require('fs')
   , request = require('request')
   , exec=require('child_process').exec
-=======
   , Imap = require('imap')
-  , inspect = require('util').inspect;
->>>>>>> 7a5587487a3c7642531c7a6bdfc53c3aed65c15e
+  , inspect = require('util').inspect;e
   ;
 
 ;
