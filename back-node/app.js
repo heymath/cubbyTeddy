@@ -17,7 +17,9 @@ var express = require('express')
   , async = require('async')
   , mongoose = require('mongoose')
   , geoip = require('geoip-lite')
-
+  , fs = require('fs')
+  , request = require('request')
+  , exec=require('child_process').exec
   ;
 
 ;
@@ -47,7 +49,8 @@ var express = require('express')
     }).pipe(yumi);
 
   }
-  
+
+speak('kjdkjd');
 var app = express();
 /* Serveur express */
 
