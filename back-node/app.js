@@ -22,6 +22,32 @@ var express = require('express')
 
 ;
 
+  var speak = function(sentence){
+
+    console.log(sentence);
+    var fileTmpPath = './tmp/speak';  
+      //console.log(req.query);
+  
+    var downloadfile = "http://translate.google.com/translate_tts?q="+sentence+"&tl=fr";
+    
+    var currentTime = new Date();
+    var realname = currentTime.getTime() + ".mp3";
+
+
+    var yumi = fs.createWriteStream(fileTmpPath+'/'+realname);
+    yumi.on('close', function() {
+        cmd = 'mpg321 '+fileTmpPath+'/'+realname;
+        function puts(error, stdout, stderr) { console.log(stdout) }
+        exec(cmd, puts);
+    });
+
+    reponse = request(downloadfile, function(error, response, buffer) {
+      //console.log(error)
+      // /console.log(response)
+    }).pipe(yumi);
+
+  }
+  
 var app = express();
 /* Serveur express */
 
@@ -130,6 +156,7 @@ var query = mongoModel.find(null);
 
 
 /* API ARDUINO */
+
 
 
 
