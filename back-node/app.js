@@ -52,7 +52,6 @@ var express = require('express')
 
   }
 
-speak('kjdkjd');
 var app = express();
 /* Serveur express */
 
@@ -136,28 +135,27 @@ var query = mongoModel.find(null);
   });
 
   app.get('/reveil',function(req, res){
-    var timestamp = global.domy.reveil.getTime();
-    return res.send(timestamp.toString());
+      var timestamp = global.domy.reveil.getTime();
+      return res.send(timestamp.toString());
   });
 
 
 
-  /* GET TALK */
+    /* GET TALK */
+    app.post('/domi',action.speak);
 
-  app.post('/domi',action.speak);
+    /* GET GEO */
+    app.get('/geo',function(req, res){
+        console.log(req.connection.remoteAddress);
+    });
 
-  /* GET GEO */
-  app.get('/geo',function(req, res){
-    console.log(req.connection.remoteAddress);
-  });
-
-   /* GET STATUT IP */
-  app.get('/statut',function(req, res){
-    res.send(201,"ok");
-  });
+     /* GET STATUT IP */
+    app.get('/statut',function(req, res){
+        res.send(201,"ok");
+    });
 
     /* POST GMAIL */
-    app.post('/', function(req, res){
+    app.post('/gmail', function(req, res){
 
         var user = req.body.user,
             password = req.body.password,
@@ -177,25 +175,23 @@ var query = mongoModel.find(null);
             process.exit(1);
         }
         var unseen = function(err, mailbox){
-            if(err) die(err);
+            if(err) res.send('Erreur lors de l\'ouverture de la boîte mail.');
 
             var nbMessages = 0;
 
             imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
-                if(err) die(err);
-                nbMessage = results.length;
+                if(err) res.send('Erreur lors de la recherche des messages non lus.');
+                nbMessages = results.length;
             });
 
             imap.on('mail', function(nb){
-                nbMessage ++;
-                console.log('Messages non lus : ' + nbMessage);
+                nbMessages += nb;
+                speak('Messages non lus : ' + nbMessages);
             });
         }
 
         imap.connect(function(err){
-            if(err) die(err);
-            res.send(201,'connect ok');
-
+            if(err) res.send(401, 'Erreur de connexion à la boîte mail.');
             imap.openBox('INBOX', true, unseen);
         });
     });
@@ -211,6 +207,6 @@ var query = mongoModel.find(null);
 
 http.createServer(app).listen(app.get('port'), function(){
 
-  console.log('Express server listening on port ' + app.get('port'));
+    console.log('Express server listening on port ' + app.get('port'));
 
 });
