@@ -17,9 +17,14 @@ var express = require('express')
   , async = require('async')
   , mongoose = require('mongoose')
   , geoip = require('geoip-lite')
+<<<<<<< HEAD
   , fs = require('fs')
   , request = require('request')
   , exec=require('child_process').exec
+=======
+  , Imap = require('imap')
+  , inspect = require('util').inspect;
+>>>>>>> 7a5587487a3c7642531c7a6bdfc53c3aed65c15e
   ;
 
 ;
@@ -153,6 +158,50 @@ var query = mongoModel.find(null);
   app.get('/statut',function(req, res){
     res.send(201,"ok");
   });
+
+    /* POST GMAIL */
+    app.post('/', function(req, res){
+
+        var user = req.body.user,
+            password = req.body.password,
+            imap = new Imap({
+                user: user,
+                password: password,
+                host: 'imap.gmail.com',
+                port: 993,
+                secure: true
+            });
+
+        var show = function(obj){
+            return inspect(obj, false, Infinity);
+        }
+        var die = function(err){
+            console.log('Uh oh: ' + err);
+            process.exit(1);
+        }
+        var unseen = function(err, mailbox){
+            if(err) die(err);
+
+            var nbMessages = 0;
+
+            imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
+                if(err) die(err);
+                nbMessage = results.length;
+            });
+
+            imap.on('mail', function(nb){
+                nbMessage ++;
+                console.log('Messages non lus : ' + nbMessage);
+            });
+        }
+
+        imap.connect(function(err){
+            if(err) die(err);
+            res.send(201,'connect ok');
+
+            imap.openBox('INBOX', true, unseen);
+        });
+    });
 
 
 /* FIN DU ROUTAGE  */
