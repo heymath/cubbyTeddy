@@ -16,6 +16,9 @@
     "geoip-lite": "*",
     "mongoose": "*",
     "imap": "*",
-    "later":"*"
+    "later":"*",
+    "forecast.io":"*",
+    "util":"*",
+    "log":"*"
   }
 }
