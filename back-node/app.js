@@ -52,7 +52,6 @@ var express = require('express')
 
   }
 
-speak('kjdkjd');
 var app = express();
 /* Serveur express */
 
@@ -187,7 +186,7 @@ var query = mongoModel.find(null);
 
             imap.on('mail', function(nb){
                 nbMessages += nb;
-                console.log('Messages non lus : ' + nbMessages);
+                speak('Messages non lus : ' + nbMessages);
             });
         }
 
