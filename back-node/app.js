@@ -15,7 +15,10 @@ var express = require('express')
   , blague = require('./lib/blague')
   , speak = require('./lib/speak.js')
   , async = require('async')
-  , mongoose = require('mongoose');
+  , mongoose = require('mongoose')
+  , geoip = require('geoip-lite')
+
+  ;
 
 ;
 
@@ -106,11 +109,28 @@ var query = mongoModel.find(null);
     return res.send(timestamp.toString());
   });
 
+
+
   /* GET TALK */
 
   app.post('/domi',action.speak);
 
+  /* GET GEO */
+  app.get('/geo',function(req, res){
+    console.log(req.connection.remoteAddress);
+  });
+
+   /* GET STATUT IP */
+  app.get('/statut',function(req, res){
+    res.send(201,"ok");
+  });
+
+
 /* FIN DU ROUTAGE  */
+
+
+/* API ARDUINO */
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

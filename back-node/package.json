@@ -12,6 +12,8 @@
     "fluent-ffmpeg":"",
     "qs":"",
     "async":"",
-    "consolidate": "*"
+    "consolidate": "*",
+    "geoip-lite": "*",
+    "mongoose": "*"
   }
 }
