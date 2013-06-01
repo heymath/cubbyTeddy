@@ -41,7 +41,10 @@ var express = require('express')
     var yumi = fs.createWriteStream(fileTmpPath+'/'+realname);
     yumi.on('close', function() {
         cmd = 'mpg321 '+fileTmpPath+'/'+realname;
-        function puts(error, stdout, stderr) { console.log(stdout) }
+        function puts(error, stdout, stderr) { 
+          console.log(stdout) 
+          fs.unlinkSync(fileTmpPath+'/'+realname);
+        }
         exec(cmd, puts);
     });
 
@@ -52,6 +55,7 @@ var express = require('express')
 
   }
 
+speak ('lol');
 var app = express();
 /* Serveur express */
 
