@@ -156,7 +156,7 @@ var query = mongoModel.find(null);
     });
 
     /* POST GMAIL */
-    app.post('/', function(req, res){
+    app.post('/gmail', function(req, res){
 
         var user = req.body.user,
             password = req.body.password,
@@ -176,25 +176,23 @@ var query = mongoModel.find(null);
             process.exit(1);
         }
         var unseen = function(err, mailbox){
-            if(err) die(err);
+            if(err) res.send('Erreur lors de l\'ouverture de la boîte mail.');
 
             var nbMessages = 0;
 
             imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
-                if(err) die(err);
-                nbMessage = results.length;
+                if(err) res.send('Erreur lors de la recherche des messages non lus.');
+                nbMessages = results.length;
             });
 
             imap.on('mail', function(nb){
-                nbMessage ++;
-                console.log('Messages non lus : ' + nbMessage);
+                nbMessages += nb;
+                console.log('Messages non lus : ' + nbMessages);
             });
         }
 
         imap.connect(function(err){
-            if(err) die(err);
-            res.send(201,'connect ok');
-
+            if(err) res.send(401, 'Erreur de connexion à la boîte mail.');
             imap.openBox('INBOX', true, unseen);
         });
     });
