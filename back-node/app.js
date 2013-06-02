@@ -32,6 +32,8 @@ var express = require('express')
   ;
 
 ;
+  
+  var statutGmail = false;
 
   var options = {
     APIKey: "0e9e9faeff918cd7a893fe3f6c2419ce",
@@ -98,7 +100,8 @@ var domySchema = new mongoose.Schema({
   reveil : { type: Date},
   speak : { type: Array},
   name : {type: String},
-  schedule : { type: Object}
+  schedule : { type: Object},
+  alarm : { type: Object}
 });
 
 var mongoModel = mongoose.model('domy',domySchema);
@@ -123,7 +126,11 @@ global.domy = {
       statut:0
     }
   },
-  reveil : new Date()
+  reveil : new Date(),
+  alarm :{
+    email:null,
+    mdp:null
+  }
 }
 
 
@@ -173,6 +180,21 @@ var query = mongoModel.find(null);
         res.send(201,"ok");
     });
 
+
+        /* POST GMAIL */
+    app.get('/gmailStatut', function(req, res){
+
+      var statut = req.query.statut;
+      console.log(req.query.statut)
+      if(statut == 'true'){
+        speak("je vais surveilé vos mail");
+        statutGmail = statut;
+      }else{
+        speak("Ok je m'en fiche de tes mails");
+        statutGmail = statut;
+      }
+    });
+
     /* POST GMAIL */
     app.post('/gmail', function(req, res){
 
@@ -185,6 +207,8 @@ var query = mongoModel.find(null);
                 port: 993,
                 secure: true
             });
+
+
 
         var show = function(obj){
             return inspect(obj, false, Infinity);
@@ -205,13 +229,15 @@ var query = mongoModel.find(null);
 
             imap.on('mail', function(nb){
                 nbMessages += nb;
-                speak('Messages non lus : ' + nbMessages);
+                if(statutGmail == 'true')
+                  speak('Il y a '+nbMessages +' message non lu.');
             });
         }
 
         imap.connect(function(err){
             if(err) res.send(401, 'Erreur de connexion à la boîte mail.');
             imap.openBox('INBOX', true, unseen);
+            speak("Je vais surveilai vos mails !");
         });
     });
 
@@ -328,7 +354,7 @@ var query = mongoModel.find(null);
 
 
 
-  l = later(60)
+  l = later(3600)
   l.exec(mSched, (new Date()), actionDomi);
 /* FIN HORLOGE  */
 
