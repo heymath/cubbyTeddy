@@ -156,14 +156,14 @@ var query = mongoModel.find(null);
   
   /* GET & SET REVEIL */
 
-  app.post('/reveil',function(req, res){
-      console.log(req);
-  });
+    app.post('/reveil',function(req, res){
+        console.log(req);
+    });
 
-  app.get('/reveil',function(req, res){
-      var timestamp = global.domy.reveil.getTime();
-      return res.send(timestamp.toString());
-  });
+    app.get('/reveil',function(req, res){
+        var timestamp = global.domy.reveil.getTime();
+        return res.send(timestamp.toString());
+    });
 
 
 
