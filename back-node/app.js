@@ -185,50 +185,59 @@ var query = mongoModel.find(null);
 
     /* POST GMAIL */
     app.post('/gmail', function(req, res){
-        var user = req.body.user,
-            password = req.body.password,
-            imap = new Imap({
-                user: user,
-                password: password,
-                host: 'imap.gmail.com',
-                port: 993,
-                secure: true
-            });
+        // si Gmail est activé
+        if(statutGmail == 'true'){
+            var user = req.body.user,
+                password = req.body.password,
+                imap = new Imap({
+                    user: user,
+                    password: password,
+                    host: 'imap.gmail.com',
+                    port: 993,
+                    secure: true
+                });
 
-        var show = function(obj){
-            return inspect(obj, false, Infinity);
-        }
-        var die = function(err){
-            console.log('Uh oh: ' + err);
-            process.exit(1);
-        }
-        var unseen = function(err, mailbox){
-            if(err){
-                res.send('Erreur lors de l\'ouverture de la boîte mail.');
-                die(err);
+            var show = function(obj){
+                return inspect(obj, false, Infinity);
             }
-            var nbMessages = 0;
-            imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
+            var die = function(err){
+                console.log('Uh oh: ' + err);
+                process.exit(1);
+            }
+            var unseen = function(err, mailbox){
                 if(err){
-                    res.send('Erreur lors de la recherche des messages non lus.');
+                    res.send('Erreur lors de l\'ouverture de la boîte mail.');
                     die(err);
                 }
-                nbMessages = results.length;
-            });
-            imap.on('mail', function(nb){
-                nbMessages += nb;
-                if(statutGmail == 'true')
-                  speak('Il y a '+nbMessages +' message non lu.');
+                var nbMessages = 0;
+                imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
+                    if(err){
+                        res.send('Erreur lors de la recherche des messages non lus.');
+                        die(err);
+                    }
+                    nbMessages = results.length;
+                });
+                imap.on('mail', function(nb){
+                    if(statutGmail == 'true')
+                    nbMessages += nb;
+                    if(statutGmail == 'true'){
+                        speak('Il y a '+nbMessages +' message non lu.');
+                    }
+                });
+            }
+
+            imap.connect(function(err){
+                if(err){
+                    res.send(401, 'Erreur de connexion à la boîte mail.');
+                    die(err);
+                }
+                imap.openBox('INBOX', true, unseen);
             });
         }
-
-        imap.connect(function(err){
-            if(err){
-                res.send(401, 'Erreur de connexion à la boîte mail.');
-                die(err);
-            }
-            imap.openBox('INBOX', true, unseen);
-        });
+        // si Gmail est désactivé
+        else{
+            speak('Tu ne m\'a pas donné tes identifiants Jai mail.');
+        }
     });
 
 /* FIN DU ROUTAGE  */
