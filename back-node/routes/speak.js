@@ -60,7 +60,7 @@ exports.speak = function(req, res){
                     	break;
 
                     	case "quel est la météo aujourd'hui":
-						            speak("il va pleuvoir ! et il va faire 18 degrer. Tu devrais prendre un parapluie.".replace(/ /g,'%20'));
+						            speak("Il va pleuvoir ! et il va faire 18 degrer. Tu devrais prendre un parapluie.".replace(/ /g,'%20'));
                     	break;
 
                     	case "allumé la cafetière":
@@ -96,17 +96,17 @@ exports.speak = function(req, res){
                         switch(domy.speak[1].statut){
 
                           case 0:
-                            speak("Désolée, je ne comprends pas, pourrais-tu réessayer?".replace(/ /g,'%20'));
+                            speak("Pardon, mais je ne comprends pas.".replace(/ /g,'%20'));
                             domy.speak[1].statut++;
                           break;
 
                           case 1:
-                            speak("Je ne comprends TOUJOURS pas".replace(/ /g,'%20'));
+                            speak("Je ne comprend toujours pas.".replace(/ /g,'%20'));
                             domy.speak[1].statut++;
                           break;
 
                           case 2:
-                            speak("Ce n’est plus la peine de réessayer, arrete toi".replace(/ /g,'%20'));
+                            speak("Ce n’est plus la peine de me parler, je boude.".replace(/ /g,'%20'));
                             domy.speak[1].statut=0;
                           break;
                         }
