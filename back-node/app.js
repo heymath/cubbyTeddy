@@ -181,18 +181,18 @@ var query = mongoModel.find(null);
     });
 
 
-        /* POST GMAIL */
+    /* GET GMAIL */
     app.get('/gmailStatut', function(req, res){
 
-      var statut = req.query.statut;
-      console.log(req.query.statut)
-      if(statut == 'true'){
-        speak("je vais surveilé vos mail");
-        statutGmail = statut;
-      }else{
-        speak("Ok je m'en fiche de tes mails");
-        statutGmail = statut;
-      }
+        var statut = req.query.statut;
+        console.log(req.query.statut)
+        if(statut == 'true'){
+            speak("Je vais surveilé vos mail");
+            statutGmail = statut;
+        }else{
+            speak("Ok je m'en fiche de tes mails");
+            statutGmail = statut;
+        }
     });
 
     /* POST GMAIL */
@@ -218,12 +218,18 @@ var query = mongoModel.find(null);
             process.exit(1);
         }
         var unseen = function(err, mailbox){
-            if(err) res.send('Erreur lors de l\'ouverture de la boîte mail.');
+            if(err){
+                res.send('Erreur lors de l\'ouverture de la boîte mail.');
+                die(err);
+            }
 
             var nbMessages = 0;
 
             imap.search([ 'UNSEEN', ['SINCE', 'April 1, 2004'] ], function(err, results){
-                if(err) res.send('Erreur lors de la recherche des messages non lus.');
+                if(err){
+                    res.send('Erreur lors de la recherche des messages non lus.');
+                    die(err);
+                }
                 nbMessages = results.length;
             });
 
@@ -235,9 +241,12 @@ var query = mongoModel.find(null);
         }
 
         imap.connect(function(err){
-            if(err) res.send(401, 'Erreur de connexion à la boîte mail.');
+            if(err){
+                res.send(401, 'Erreur de connexion à la boîte mail.');
+                die(err);
+            }
             imap.openBox('INBOX', true, unseen);
-            speak("Je vais surveilai vos mails !");
+            speak("Je surveille les mails !");
         });
     });
 
