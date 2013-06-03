@@ -175,7 +175,7 @@ var query = mongoModel.find(null);
         var statut = req.query.statut;
         //console.log(req.query.statut)
         if(statut == 'true'){
-            speak("Je surveille les mails !");
+            speak('Je surveille les mails !');
             statutGmail = statut;
         }else{
             //speak("Ok je m'en fiche de tes mails");
@@ -315,7 +315,7 @@ var query = mongoModel.find(null);
                         domy.schedule.weather.statut++;
                     break;
                     case 2:
-                        speak("Et si on prenait une glace avec cette température de " + temp + 'degrai .');
+                        speak('Et si on prenait une glace avec cette température de ' + temp + 'degrai .');
                         domy.schedule.weather.statut=0;
                     break;
                 }
