@@ -33,7 +33,8 @@ var express = require('express')
 
 ;
   
-var statutGmail = false;
+var statutGmail = false,
+    statutReveil = false;
 
 var options = {
     APIKey: "0e9e9faeff918cd7a893fe3f6c2419ce",
@@ -150,11 +151,31 @@ var query = mongoModel.find(null);
   
   /* GET & SET REVEIL */
     app.post('/reveil',function(req, res){
-        console.log(req);
+        if(reveil){
+            reveil.clearInterval();
+        }
+        console.log(req.body);
+        var hour = parseInt(req.body.hour),
+            minutes = parseInt(req.body.minutes);
+
+        var reveil = setInterval(function(){ clock(hour, minutes, statutReveil) }, 10000);
+        function clock(hour, minutes, statutReveil){
+            var todayTime = new Date(),
+                todayHours = todayTime.getHours(),
+                todayMinutes = todayTime.getMinutes();
+            if(hour == todayHours && minutes == todayMinutes){
+                speak('Raiveille-toi !');
+            }
+        }
     });
-    app.get('/reveil',function(req, res){
-        var timestamp = global.domy.reveil.getTime();
-        return res.send(timestamp.toString());
+    app.post('/reveilStatut', function(req, res){
+        var statutReveil = req.body.statut;
+        if(statutReveil == 'true'){
+            speak('Je te rayveillerai !');
+        }
+        else{
+            speak('Je te laisse dormir !');
+        }
     });
 
     /* GET TALK */
@@ -171,14 +192,12 @@ var query = mongoModel.find(null);
     });
 
     /* GET GMAIL */
-    app.get('/gmailStatut', function(req, res){
-        var statut = req.query.statut;
-        //console.log(req.query.statut)
+    app.post('/gmailStatut', function(req, res){
+        var statut = req.body.statut;
         if(statut == 'true'){
-            speak('Je surveille les mails !');
+            speak('Je surveille tes mails !');
             statutGmail = statut;
         }else{
-            //speak("Ok je m'en fiche de tes mails");
             statutGmail = statut;
         }
     });
@@ -218,7 +237,6 @@ var query = mongoModel.find(null);
                     nbMessages = results.length;
                 });
                 imap.on('mail', function(nb){
-                    if(statutGmail == 'true')
                     nbMessages += nb;
                     if(statutGmail == 'true'){
                         speak('Il y a '+nbMessages +' message non lu.');
